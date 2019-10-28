@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css_register.css">
 </head>
 <body>
+<form action="<%= request.getContextPath() %>/register" method="post">
 <div class="pageBox">
     <table align="center">
         <tr>
@@ -21,8 +22,8 @@
             <td>
                 <h1>REGISTER </h1>
                 <div class="pageRegister">
-                   <p>ชื่อ</p><input type="text" name="nameTH" placeholder="Name">
-                    <p>นามสกุล</p><input type="text" name="LastNameTH" placeholder="LastName">
+                   <p>ชื่อ</p><input type="text" name="firstName" placeholder="Name">
+                    <p>นามสกุล</p><input type="text" name="lastName" placeholder="LastName">
                     <p> วันเกิด </p>
                     <select name="birthDay">
                         <option value="">- Day -</option>
@@ -180,7 +181,7 @@
                     <p>ตำแหน่ง</p><input type="text" name="Position" placeholder="Working position">
                     <p>ชื่อผู้ใช้งาน</p><input type="text" name="userName" placeholder="User Name">
                     <p>รหัสผ่าน</p><p><font size="3" color="red">${errorInPassMsg}</font></p>
-                    <input type="password" name="password" placeholder="●●●●●●●●" pattern="\S+" value="${user.pass}">
+                    <input type="password" name="password" placeholder="●●●●●●●●" pattern="\S+" >
                     <p>รหัสผ่านอีกครั้ง</p><p><font size="3" color="red">${errorInPass2Msg}</font></p>
                     <input type="password" name="password2" placeholder="●●●●●●●●">
                     <a href="index.jsp"><input type="submit" name="Submit" value="CONFIRM"></a>
@@ -192,6 +193,7 @@
     </table>
 
 </div>
+</form>
 
 </body>
 </html>
