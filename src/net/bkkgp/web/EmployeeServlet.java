@@ -37,8 +37,12 @@ public class EmployeeServlet extends HttpServlet {
         String homeID = request.getParameter("homeID");
         String post = request.getParameter("post");
         String phoneMe = request.getParameter("phoneMe");
-        String firstName = request.getParameter("firstName");
-        String firstName = request.getParameter("firstName");
+        String email = request.getParameter("email");
+        String education = request.getParameter("education");
+        String Position = request.getParameter("Position");
+        String userName= request.getParameter("userName");
+        String password1= request.getParameter("password1");
+        String password2= request.getParameter("password2");
 
         Employee employee = new Employee();
         employee.setFirstName(firstName);
@@ -51,7 +55,12 @@ public class EmployeeServlet extends HttpServlet {
         employee.setHomeID(homeID);
         employee.setPost(post);
         employee.setPhoneMe(phoneMe);
-        employee.setFirstName(firstName);
+        employee.setEmail(email);
+        employee.setEducation(education);
+        employee.setPosition(Position);
+        employee.setUserName(userName);
+        employee.setPassword1(password1);
+        employee.setPassword2(password2);
 
         try {
             employeeDao.registerEmployee(employee);

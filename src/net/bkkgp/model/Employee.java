@@ -13,10 +13,21 @@ public class Employee implements Serializable {
     private static final long serialVersionUID = 1L;
     private String firstName;
     private String lastName;
-    private String username;
-    private String password;
-    private String address;
-    private String contact;
+    private String birthDay;
+    private String birthMonth;
+    private String birthYear;
+    private String sex;
+    private String nationality;
+    private String homeID;
+    private String post;
+    private String phoneMe;
+    private String email;
+    private String education;
+    private String Position;
+    private String userName;
+    private String password1;
+    private String password2;
+
     public String getFirstName() {
         return firstName;
     }
@@ -29,28 +40,88 @@ public class Employee implements Serializable {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public String getUsername() {
-        return username;
+    public String getBirthDay() {
+        return birthDay;
     }
-    public void setUsername(String username) {
-        this.username = username;
+    public void setBirthDay(String birthDay) {
+        this.birthDay = birthDay;
     }
-    public String getPassword() {
-        return password;
+    public String getBirthMonth() {
+        return birthMonth;
     }
-    public void setPassword(String password) {
-        this.password = password;
+    public void setBirthMonth(String birthMonth) {
+        this.birthMonth = birthMonth;
     }
-    public String getAddress() {
-        return address;
+    public String getBirthYear() {
+        return birthYear;
     }
-    public void setAddress(String address) {
-        this.address = address;
+    public void setBirthYear(String birthYear) {
+        this.birthYear = birthYear;
     }
-    public String getContact() {
-        return contact;
+    public String getSex() {
+        return sex;
     }
-    public void setContact(String contact) {
-        this.contact = contact;
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+    public String getNationality() {
+        return nationality;
+    }
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+    public String getHomeID() {
+        return homeID;
+    }
+    public void setHomeID(String homeID) {
+        this.homeID = homeID;
+    }
+    public String getPost() {
+        return post;
+    }
+    public void setPost(String post) {
+        this.post = post;
+    }
+    public String getPhoneMe() {
+        return phoneMe;
+    }
+    public void setPhoneMe(String phoneMe) {
+        this.phoneMe = phoneMe;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getEducation() {
+        return education;
+    }
+    public void setEducation(String education) {
+        this.education = education;
+    }
+    public String getPosition() {
+        return Position;
+    }
+    public void setPosition(String Position) {
+        this.Position = Position;
+    }
+    public String getUserName() {
+        return userName;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    public String getPassword1() {
+        return password1;
+    }
+    public void setPassword1(String password1) {
+        this.password1 = password1;
+    }
+    public String getPassword2() {
+        return password1;
+    }
+    public void setPassword2(String password2) {
+        this.password2 = password2;
     }
 }
