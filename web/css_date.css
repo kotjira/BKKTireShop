@@ -1,0 +1,135 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: darkorange;
+    font-family: Srinakharinwirot;
+}
+.pageBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1150px;
+    height: 650px;
+    padding: 10px ;
+    box-sizing: border-box;
+    background: #ffcb32;
+}
+.pageBox h1 {
+    font-size: 60px;
+    color: white;
+    border: #353535;
+}
+.pageDate {
+    width: 500px;
+    height: 320px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 45px;
+}
+
+.pageDate p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #353535;
+}
+.pageDate input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.pageDate input[type= "text"],
+.pageDate input[type= "password"]
+{
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background: transparent;
+    outline: none ;
+    height: 40px;
+    color: #484848;
+    font-size: 16px;
+}
+::placeholder
+{
+    color: rgba(255,255,255,.5);
+}
+.pageDate input[type="submit"]
+{
+    border : none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #ff8c00;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.pageDate input[type="submit"]:hover
+{
+    background: #dc6104;
+    color: #ffffff;
+}
+.pageDate a
+{
+    color: #242424;
+    font-size: 14px ;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pageDate
+{
+    color: #ff7006;
+    font-size: 20px ;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.buttonConfirm {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #22d54b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonConfirm span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonConfirm span:after {
+    content: '✔';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonConfirm:hover span {
+    padding-right: 25px;
+}
+
+.buttonConfirm:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
