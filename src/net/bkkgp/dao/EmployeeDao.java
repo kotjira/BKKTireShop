@@ -26,19 +26,15 @@ public class EmployeeDao {
             preparedStatement.setString(1, employee.getFirstName());
             preparedStatement.setString(2, employee.getLastName());
             preparedStatement.setString(3, employee.getSex());
-            preparedStatement.setString(4, employee.getBirthDay());
-            preparedStatement.setString(4, employee.getBirthMonth());
-            preparedStatement.setString(4, employee.getBirthYear());
-            preparedStatement.setString(5, employee.getHomeID());
-            preparedStatement.setString(5, employee.getPost());
+            preparedStatement.setString(4, employee.getBirthDay()+"/"+employee.getBirthMonth()+"/"+employee.getBirthYear());
+            preparedStatement.setString(5, employee.getHomeID()+"/"+employee.getPost());
             preparedStatement.setString(6, employee.getPhoneMe());
             preparedStatement.setString(7, employee.getPosition());
             preparedStatement.setString(8, employee.getNationality());
             preparedStatement.setString(9, employee.getEducation());
             preparedStatement.setString(10, employee.getEmail());
             preparedStatement.setString(11, employee.getUserName());
-            preparedStatement.setString(12, employee.getPassword1());
-            preparedStatement.setString(12, employee.getPassword2());
+            preparedStatement.setString(12, employee.getPassword1()+"/"+employee.getPassword2());
 
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
