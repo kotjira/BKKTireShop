@@ -24,7 +24,7 @@ public class tire extends HttpServlet {
             System.out.println(roll);
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
             String dbURL = "jdbc:mysql://167.71.211.97:3306/rb_2";
-            String dbUser = "roadbuddy";
+            String dbUser = "roadbu";
             String dbPass = "roadbuddyadmin1";
             Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
