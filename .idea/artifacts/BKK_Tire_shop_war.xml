@@ -3,6 +3,12 @@
     <output-path>$PROJECT_DIR$/out/artifacts/BKK_Tire_shop_war</output-path>
     <root id="archive" name="BKK Tire shop_war.war">
       <element id="artifact" artifact-name="BKK Tire shop:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="application" name="lib" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

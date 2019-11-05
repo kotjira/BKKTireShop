@@ -10,9 +10,12 @@
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.25.jar!/" />
+      <root url="file://$PROJECT_DIR$/lib" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/web/WEB-INF" recursive="false" />
   </library>
 </component>

@@ -26,7 +26,7 @@ public class EmployeeServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        request.setCharacterEncoding("UTF-8");
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String birthDay= request.getParameter("birthDay");
@@ -61,7 +61,7 @@ public class EmployeeServlet extends HttpServlet {
         employee.setUserName(userName);
         employee.setPassword1(password1);
         employee.setPassword2(password2);
-
+System.out.println(birthDay);
         try {
             employeeDao.registerEmployee(employee);
         } catch (Exception e) {

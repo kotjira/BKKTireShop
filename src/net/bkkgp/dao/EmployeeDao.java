@@ -1,17 +1,16 @@
 package net.bkkgp.dao;
 
+import net.bkkgp.model.Employee;
 import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import net.bkkgp.model.Employee;
-
 public class EmployeeDao {
 
     public int registerEmployee(Employee employee) throws ClassNotFoundException{
         String INSERT_USERS_SQL = "INSERT INTO employees" +
-                "  (Em_Name, Em_Surname, Em_Gender, Em_Date_of_Birth,Em_Address,Em_Tel,Em_Position,Em_Nationality,Em_Education,Em_Email,Em_Username,Em_Password) VALUES " +
+                "  (Em_Name, Em_Surname,Em_Gender, Em_Date_of_Birth,Em_Address,Em_Tel,Em_Position,Em_Nationality,Em_Education,Em_Email,Em_Username,Em_Password) VALUES " +
                 " (?,?,?,?,?,?,?,?,?,?,?,?);";
 
         int result = 0;
@@ -26,7 +25,7 @@ public class EmployeeDao {
             preparedStatement.setString(1, employee.getFirstName());
             preparedStatement.setString(2, employee.getLastName());
             preparedStatement.setString(3, employee.getSex());
-            preparedStatement.setString(4, employee.getBirthDay()+"/"+employee.getBirthMonth()+"/"+employee.getBirthYear());
+            preparedStatement.setString(4, employee.getBirthYear()+"-"+employee.getBirthMonth()+"-"+employee.getBirthDay());
             preparedStatement.setString(5, employee.getHomeID()+"/"+employee.getPost());
             preparedStatement.setString(6, employee.getPhoneMe());
             preparedStatement.setString(7, employee.getPosition());
@@ -34,7 +33,7 @@ public class EmployeeDao {
             preparedStatement.setString(9, employee.getEducation());
             preparedStatement.setString(10, employee.getEmail());
             preparedStatement.setString(11, employee.getUserName());
-            preparedStatement.setString(12, employee.getPassword1()+"/"+employee.getPassword2());
+            preparedStatement.setString(12, employee.getPassword1());
 
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
