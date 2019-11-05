@@ -13,26 +13,21 @@
 </head>
 <body>
 <div class="pageBox">
-    <left><h1>คุณสมบัติ</h1></left>
-    <div class="pageAttribute">
+    <div class="pageH1"><left><h1>คุณสมบัติ</h1></left></div>
+    <div class="pageH" align="right"> <a href="tire.jsp"><button class="buttonBack" style="vertical-align:middle"><span>BACK </span> </button></a>
+    </div>
+
+    <div class="pageGen" style="overflow-y:hidden;height:420px">
         <table>
             <tr>
-                <td>
+                <td width="500px">
                     <img src="./img/22_MICHELINPilot%20Super%20Sport1%204.png" height="350"/>
                 </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>ขนาดของขอบยาง</td> <td>Yaa</td>
-                        </tr>
-                        <tr>
-                            <td>ชื่อยี่ห้อ</td> <td>5g55</td>
-                        </tr>
-                        <tr>
-                            <td>ชื่อรุ่น</td> <td>5g55</td>
-                        </tr>
-                        <tr>
-                            <td>ความกว้างหน้ายาง (มม.)</td> <td>5g55</td>
+                <td width="500px">
+                    <table bgcolor="silver">
+
+                        <tr >
+                            <td width="450">ความกว้างหน้ายาง (มม.)</td> <td width="250">5g55</td>
                         </tr>
                         <tr>
                             <td>ความสูงของแก้มยาง (ซีรี่ย์,เปอร์เซนต์)</td> <td>5g55</td>
@@ -62,7 +57,7 @@
                             <td>ประเภทยาง</td> <td>5g55</td>
                         </tr>
                         <tr>
-                            <td>ราคา (ต่อเส้น) อ้างอิง Lazada เป็นส่วนใหญ่</td> <td>5g55</td>
+                            <td>ราคา (ต่อเส้น)</td> <td>5g55</td>
                         </tr>
                         <tr>
                             <td>จำนวนคลังสินค้า</td> <td>5g55</td>
@@ -72,6 +67,8 @@
             </tr>
         </table>
     </div>
+
 </div>
 </body>
+
 </html>
