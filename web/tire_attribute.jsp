@@ -9,8 +9,11 @@
 <html>
 <head>
     <title>คุณสมบัติ</title>
+    <link rel="stylesheet" href="css_tire_generation.css">
 </head>
 <body>
-
+<div class="pageBox">
+    <left><h1>คุณสมบัติ</h1></left>
+</div>
 </body>
 </html>
