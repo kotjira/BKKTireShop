@@ -6,6 +6,12 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    if(session.getAttribute("login")==null || session.getAttribute("login")==" ") //check condition unauthorize user not direct access welcome.jsp page
+    {
+        response.sendRedirect("index.jsp");
+    }
+%>
 <html>
 <head>
     <title>Home - หน้าแรก</title>
@@ -27,7 +33,7 @@
                     <a href="order.jsp"><button class="buttonOrder"  style="vertical-align:middle"><span>ใบสั่งสินค้า </span> </button></a>
                 </div>
                 <br>
-                <center><a href="index.jsp"><button class="buttonLogout"  style="vertical-align:middle"><span>ออกจากระบบ</span> </button></a> </center>
+                <center><a href="logout.jsp"><button class="buttonLogout"  style="vertical-align:middle"><span>ออกจากระบบ</span> </button></a> </center>
             </td>
 
         </tr>
