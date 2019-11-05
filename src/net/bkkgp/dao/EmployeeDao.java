@@ -1,6 +1,6 @@
 package net.bkkgp.dao;
 
-import java.sql.Connection;
+import java.sql.*;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import net.bkkgp.model.Employee;
 
 public class EmployeeDao {
 
-    public int registerEmployee(Employee employee) throws ClassNotFoundException {
+    public int registerEmployee(Employee employee) throws ClassNotFoundException{
         String INSERT_USERS_SQL = "INSERT INTO employees" +
                 "  (Em_Name, Em_Surname, Em_Gender, Em_Date_of_Birth,Em_Address,Em_Tel,Em_Position,Em_Nationality,Em_Education,Em_Email,Em_Username,Em_Password) VALUES " +
                 " (?,?,?,?,?,?,?,?,?,?,?,?);";
@@ -19,7 +19,7 @@ public class EmployeeDao {
         Class.forName("com.mysql.jdbc.Driver");
 
         try (Connection connection = DriverManager
-                .getConnection("jdbc:mysql://localhost:3306/BKK GROUP?useSSL=false", "root", "1809900912552");
+                .getConnection("jdbc:mysql://167.99.76.137:3306/BKK GROUP?useSSL=false", "bkkgroup", "212224236248");
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {

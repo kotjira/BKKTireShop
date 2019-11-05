@@ -184,7 +184,7 @@
                     <input type="password" name="password1" placeholder="●●●●●●●●" pattern="\S+" >
                     <p>รหัสผ่านอีกครั้ง</p><p><font size="3" color="red">${errorInPass2Msg}</font></p>
                     <input type="password" name="password2" placeholder="●●●●●●●●">
-                    <a href="index.jsp"><input type="submit" name="Submit" value="CONFIRM"></a>
+                    <input type="submit" name="Submit" value="CONFIRM"></a>
                 </div >
             </td>
             <td><img src="./img/2.png" width="300" align="center"/></td>
