@@ -4,6 +4,7 @@ body
     padding: 0;
     background-color: darkorange;
     font-family: Srinakharinwirot;
+    overflow: hidden;
 }
 .pageBox {
     position: absolute;
@@ -22,14 +23,6 @@ body
     border: #353535;
 }
 
-.pageAttribute {
-    width: 1070px;
-    height: 420px;
-    padding: 30px 30px ;
-    box-sizing: border-box;
-    background: white;
-    border-radius: 45px;
-}
 
 .buttonBack {
     display: inline-block;
@@ -38,9 +31,9 @@ body
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 30px;
+    font-size: 17px;
     padding: 10px;
-    width: 450px;
+    width: 250px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -70,4 +63,30 @@ body
 .buttonBack:hover span:after {
     opacity: 1;
     left: 0;
+}
+
+.pageGen{
+    width: 1070px;
+    height: 370px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 45px;
+}
+
+.pageGen1{
+    width: 300px;
+    height: 350px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: #e0e0e0;
+    border-radius: 45px;
+}
+
+
+.pageH1 {
+    float: left;
+}
+.pageH {
+    float: right;
 }
