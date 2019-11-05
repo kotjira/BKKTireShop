@@ -20,23 +20,58 @@
         <table>
             <tr>
                 <td>
-                    <div class="pageGen1">
-                        <center><a href="tire_attribute.jsp"><button class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                    <div class="pageGen1" align="center">
+                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
+                            <img src="./img/14_MICHELINENERGY%20XM2%201.png" height="125" />
+                            <h2>HANKOOK</h2>
+                            <h4>Kinergy EX (H308)</h4>
+                            <input type="hidden" value="MI14530" name="brand">
+                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                        </form>
                     </div>
                 </td>
                 <td>
-                    <div class="pageGen1">
-                        <center><a href="tire_attribute.jsp"><button class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                    <div class="pageGen1" align="center">
+                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
+                            <img src="./img/14MICHELINENERGY%20XM2%202.png" height="125" />
+                            <h2>HANKOOK</h2>
+                            <h4>Kinergy EX (H308)</h4>
+                            <input type="hidden" value="MI14560" name="brand">
+                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                        </form>
                     </div>
                 </td>
                 <td>
-                    <div class="pageGen1">
-                        <center><a href="tire_attribute.jsp"><button class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                    <div class="pageGen1" align="center">
+                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
+                            <img src="./img/14_MICHELINENERGY%20XM2%203.png" height="125" />
+                            <h2>NEXEN</h2>
+                            <h4>N blue HD Plus</h4>
+                            <input type="hidden" value="MI14475" name="brand">
+                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                        </form>
                     </div>
                 </td>
                 <td>
-                    <div class="pageGen1">
-                        <center><a href="tire_attribute.jsp"><button class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                    <div class="pageGen1" align="center">
+                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
+                            <img src="./img/14_MICHELINENERGY%20XM2%201.png" height="125" />
+                            <h2>NEXEN</h2>
+                            <h4>N blue HD Plus</h4>
+                            <input type="hidden" value="MI14437" name="brand">
+                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    <div class="pageGen1" align="center">
+                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
+                            <img src="./img/14_MICHELINENERGY%20XM2%201.png" height="125" />
+                            <h2>BF GOODRICH</h2>
+                            <h4>Advantage T/A Drive</h4>
+                            <input type="hidden" value="MI14462" name="brand">
+                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                        </form>
                     </div>
                 </td>
             </tr>
