@@ -5,6 +5,9 @@
   Time: 4:04 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%
+  String errorInNameMsg = request.getAttribute("errorInNameMsg").toString();
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
@@ -23,12 +26,12 @@
         <td>
           <h1>LOGIN </h1>
           <div class="pageLogin">
-                  <form action="${pageContext.request.contextPath}/loginprocess" method="post">
+                  <form action="${pageContext.request.contextPath}/login" method="post">
                     <p>User  name</p><p><font size="3" color="red">${loginFailMsg}</font></p>
                     <p><font size="3" color="red">${errorInNameMsg}</font></p>
-                    <input type="text" name="Username" placeholder="Enter User name" value="${user.email}" autofocus>
+                    <input type="text" name="userName" placeholder="Enter User name" value="${user.email}" autofocus>
                     <p>Password</p><p><font size="3" color="red">${errorInPassMsg}</font> </p>
-                    <input type="password" name="password" placeholder="●●●●●●●●" value="${user.pass}">
+                    <input type="password" name="Password1" placeholder="●●●●●●●●" value="${user.pass}">
                     <a href="#"><u>Forget Password</u></a>
                     <br>
                     <br>
