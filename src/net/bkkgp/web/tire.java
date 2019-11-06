@@ -41,7 +41,7 @@ public class tire extends HttpServlet {
 
             out.print("<html>");
             out.print("<head>");
-            out.print("<title>Search-ค้นหา</title>");
+            out.print("<title>คุณสมบัติ</title>");
             out.print("<link rel=\"stylesheet\" href=\"css_search.css\">");
             out.print("</head>");
             out.print("<body>");
