@@ -24,43 +24,43 @@
                     <img src="./img/22_MICHELINPilot%20Super%20Sport1%204.png" height="350"/>
                 </td>
                 <td width="500px">
-                    <table bgcolor="silver">
+                    <table bgcolor="silver" >
 
                         <tr >
-                            <td width="450">ความกว้างหน้ายาง (มม.)</td> <td width="250">5g55</td>
+                            <td class="tableBorder" width="450">ความกว้างหน้ายาง (มม.)</td> <td bgcolor="#eee8aa" width="250">5g55</td>
                         </tr>
                         <tr>
-                            <td>ความสูงของแก้มยาง (ซีรี่ย์,เปอร์เซนต์)</td> <td>5g55</td>
+                            <td class="tableBorder">ความสูงของแก้มยาง (ซีรี่ย์,เปอร์เซนต์)</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>เส้นผ่านศูนย์กลางกระทะล้อ (นิ้ว)</td> <td>5g55</td>
+                            <td class="tableBorder">เส้นผ่านศูนย์กลางกระทะล้อ (นิ้ว)</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>ความสูงแก้มยาง(มม.)</td> <td>5g55</td>
+                            <td class="tableBorder" >ความสูงแก้มยาง(มม.)</td> <td bgcolor="#eee8aa" >5g55</td>
                         </tr>
                         <tr>
-                            <td>ความสูงของยางโดยรวม(มม.)</td> <td>5g55</td>
+                            <td class="tableBorder">ความสูงของยางโดยรวม(มม.)</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>ความเร็วสูงสุด (กม./ชม.)</td> <td>5g55</td>
+                            <td class="tableBorder">ความเร็วสูงสุด (กม./ชม.)</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>รับน้ำหนักต่อล้อ (กก.)</td> <td>5g55</td>
+                            <td class="tableBorder">รับน้ำหนักต่อล้อ (กก.)</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>ความกว้างของล้อที่ใช้ทดแทนกันได้ (นิ้ว)</td> <td>5g55</td>
+                            <td class="tableBorder">ความกว้างของล้อที่ใช้ทดแทนกันได้ (นิ้ว)</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>ความดันลมยางสูงสุดต่อล้อ (ปอนด์/ตร.นิ้ว)</td> <td>5g55</td>
+                            <td class="tableBorder">ความดันลมยางสูงสุดต่อล้อ (ปอนด์/ตร.นิ้ว)</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>ประเภทยาง</td> <td>5g55</td>
+                            <td class="tableBorder">ประเภทยาง</td> <td bgcolor="#eee8aa">5g55</td>
                         </tr>
                         <tr>
-                            <td>ราคา (ต่อเส้น)</td> <td>5g55</td>
+                            <td class="tableBorder">ราคา (ต่อเส้น)</td> <td  bgcolor="#e9967a">5g55</td>
                         </tr>
                         <tr>
-                            <td>จำนวนคลังสินค้า</td> <td>5g55</td>
+                            <td >จำนวนคลังสินค้า</td> <td  bgcolor="#8fbc8f">5g55</td>
                         </tr>
                     </table>
                 </td>

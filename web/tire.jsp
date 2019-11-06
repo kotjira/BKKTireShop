@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="pageBox" >
-    <left><h1>ยางรถยนต์</h1></left>
+    <left><h1>ยางรถยนต์ | ตามขนาดนิ้ว</h1></left>
     <table align="center">
         <tr>
             <td><a href="tire_generation12.jsp"><img src="./img/trie1.png" width="120" /></a></td>
