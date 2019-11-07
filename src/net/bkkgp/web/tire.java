@@ -42,11 +42,10 @@ public class tire extends HttpServlet {
             out.print("<html>");
             out.print("<head>");
             out.print("<title>คุณสมบัติ</title>");
-            out.print("<link rel=\"stylesheet\" href=\"css_search.css\">");
+            out.print("<link rel=\"stylesheet\" href=\"css_tire_attribute.css\">");
             out.print("</head>");
             out.print("<body>");
-            out.print("<nav>");
-            out.print("<div class=\"toggle\">");
+            out.print("<div class=\"pageBox\">");
             out.print("<i class=\"fa fa-bars menu\" aria-hidden=\"true\"></i>");
             out.print("</div>");
             out.print("<ul>");
