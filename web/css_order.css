@@ -4,7 +4,14 @@ body
     padding: 0;
     background-color: darkorange;
     font-family: Srinakharinwirot;
+    overflow: hidden;
 }
+.tableBorder {
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 2px ;
+}
+
 .pageBox {
     position: absolute;
     top: 50%;
@@ -30,9 +37,9 @@ body
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 30px;
+    font-size: 17px;
     padding: 10px;
-    width: 450px;
+    width: 250px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -62,4 +69,21 @@ body
 .buttonBack:hover span:after {
     opacity: 1;
     left: 0;
+}
+
+.pageOrder{
+    width: 1070px;
+    height: 370px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 45px;
+}
+
+
+.pageH1 {
+    float: left;
+}
+.pageH {
+    float: right;
 }
