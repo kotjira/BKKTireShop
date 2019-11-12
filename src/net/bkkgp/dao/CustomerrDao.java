@@ -12,8 +12,8 @@ public class CustomerrDao {
 
     public int registerCustomerr(Customerr customerr) throws ClassNotFoundException{
         String INSERT_USERS_SQL = "INSERT INTO customer" +
-                "  (Cu_Name,Cu_Surname, Cu_Gender,Cu_Address,Cu_Nationality,Cu_Tel,Cu_Email) VALUES " +
-                " (?,?,?,?,?,?,?);";
+                "  (Cu_Name,Cu_Surname, Cu_Gender,Cu_Address,Cu_Nationality,Cu_Tel,Cu_Email,Cu_PostId) VALUES " +
+                " (?,?,?,?,?,?,?,?);";
 
         int result = 0;
 
@@ -26,11 +26,11 @@ public class CustomerrDao {
             preparedStatement.setString(1, customerr.getFirstName1());
             preparedStatement.setString(2, customerr.getLastName1());
             preparedStatement.setString(3, customerr.getSex1());
-            preparedStatement.setString(4, customerr.getHomeID1()+"/"+customerr.getPost1());
+            preparedStatement.setString(4, customerr.getHomeID1());
             preparedStatement.setString(5, customerr.getNationality1());
             preparedStatement.setString(6,customerr.getPhoneMe1());
             preparedStatement.setString(7, customerr.getEmail1());
-
+            preparedStatement.setString(8, customerr.getPost1());
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
             result = preparedStatement.executeUpdate();
