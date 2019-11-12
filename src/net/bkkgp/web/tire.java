@@ -26,9 +26,9 @@ public class tire extends HttpServlet {
             String dbPass = "212224236248";
             Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
-            PreparedStatement ps = con.prepareStatement("select * from tire where Product_ID like  ?");
-            String forSql = "%" + roll + "%";
-            ps.setString(1, forSql);
+            PreparedStatement ps = con.prepareStatement("select * from tire where Product_ID = ?");
+
+            ps.setString(1, roll);
 
             //out.print("<table width=50% border=1>");
             //out.print("<caption>Result:</caption>");
@@ -36,9 +36,6 @@ public class tire extends HttpServlet {
             String contextpath = "${pageContext.request.contextPath}";
             /* Printing column names */
             ResultSetMetaData rsmd = rs.getMetaData();
-
-
-
 
             /* Printing result */
             while (rs.next()) {

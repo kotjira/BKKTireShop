@@ -21,25 +21,25 @@
         <div class="pageAdd" style="overflow-y:hidden;height:420px" align="center">
             <table>
                 <tr>
-                    <td width="300px"><p>ชื่อ</p><input type="text" name="firstName" placeholder="Name"> </td>
-                    <td width="300px"><p>นามสกุล</p><input type="text" name="lastName" placeholder="LastName"></td>
+                    <td width="300px"><p>ชื่อ</p><input type="text" name="firstName1" placeholder="Name"> </td>
+                    <td width="300px"><p>นามสกุล</p><input type="text" name="lastName1" placeholder="LastName"></td>
                 </tr>
                 <tr>
-                    <td> <p>เพศ</p><SELECT name="sex" required><p><font size="3" color="red">${errorInSex}</font></p>
+                    <td> <p>เพศ</p><SELECT name="sex1" required><p><font size="3" color="red">${errorInSex}</font></p>
                         <OPTION SELECTED value="">Gender</OPTION>
                         <OPTION VALUE=Male>male</OPTION>
                         <OPTION VALUE=Female>female</OPTION>
                         <OPTION VALUE=Other>other</OPTION>
                     </SELECT>
-                    </td> <td> <p>สัญชาติ</p><input type="text" name="nationality" placeholder="Nationality"> </td>
+                    </td> <td> <p>สัญชาติ</p><input type="text" name="nationality1" placeholder="Nationality"> </td>
                 </tr>
                 <tr>
-                    <td><p>ที่อยู่</p><input type="text" name="homeID" placeholder="Address"></td>
-                    <td> <p>รหัสไปษณียร์</p><input type="number" name="post" placeholder="The Post Office"></td>
+                    <td><p>ที่อยู่</p><input type="text" name="homeID1" placeholder="Address"></td>
+                    <td> <p>รหัสไปษณียร์</p><input type="number" name="post1" placeholder="The Post Office"></td>
                 </tr>
                 <tr>
-                    <td><p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe" placeholder="Phone Number"></td>
-                    <td><p>อีเมล์</p><input type="text" name="email" placeholder="E-mail"></td>
+                    <td><p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe1" placeholder="Phone Number"></td>
+                    <td><p>อีเมล์</p><input type="text" name="email1" placeholder="E-mail"></td>
                 </tr>
             </table>
             <table>
