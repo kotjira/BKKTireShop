@@ -25,7 +25,18 @@
                             <img src="./img/15_MICHELINENERGY%20XM2%201.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>ENERGY XM2+</h4>
-                            <input type="hidden" value="MI14530" name="brand">
+                            <input type="hidden" value="GO15615" name="brand">
+                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    <div class="pageGen1" align="center">
+                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
+                            <img src="./img/15_MICHELINENERGY%20XM2%201.png" height="125" />
+                            <h2>MICHELIN</h2>
+                            <h4>ENERGY XM2+</h4>
+                            <input type="hidden" value="GO15670" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -44,32 +55,21 @@
                 <td>
                     <div class="pageGen1" align="center">
                         <form  action="<%= request.getContextPath() %>/attribute" method="get" >
-                            <img src="./img/15_MICHELINENERGY%20XM2%201.png" height="125" />
-                            <h2>MICHELIN</h2>
-                            <h4>ENERGY XM2+</h4>
+                            <img src="./img/15_GOODYEARASSURANCE%20DURAPLUS%204.png" height="125" />
+                            <h2>GOODYEAR</h2>
+                            <h4>ASSURANCE DURAPLUS 2</h4>
+                            <input type="hidden" value="MI15560" name="brand">
+                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    <div class="pageGen1" align="center">
+                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
+                            <img src="./img/15_GOODYEARASSURANCE%20DURAPLUS%204.png" height="125" />
+                            <h2>GOODYEAR</h2>
+                            <h4>ASSURANCE DURAPLUS 2</h4>
                             <input type="hidden" value="MI15710" name="brand">
-                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
-                        </form>
-                    </div>
-                </td>
-                <td>
-                    <div class="pageGen1" align="center">
-                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
-                            <img src="./img/15_GOODYEARASSURANCE%20DURAPLUS%204.png" height="125" />
-                            <h2>GOODYEAR</h2>
-                            <h4>ASSURANCE DURAPLUS 2</h4>
-                            <input type="hidden" value="MI14437" name="brand">
-                            <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
-                        </form>
-                    </div>
-                </td>
-                <td>
-                    <div class="pageGen1" align="center">
-                        <form  action="<%= request.getContextPath() %>/attribute" method="get" >
-                            <img src="./img/15_GOODYEARASSURANCE%20DURAPLUS%204.png" height="125" />
-                            <h2>GOODYEAR</h2>
-                            <h4>ASSURANCE DURAPLUS 2</h4>
-                            <input type="hidden" value="MI14462" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
