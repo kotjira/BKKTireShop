@@ -24,7 +24,7 @@
                             <img src="./img/21_MICHELINPilot%20Super%20Sport1.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>Pilot Super Sport</h4>
-                            <input type="hidden" value="MI14530" name="brand">
+                            <input type="hidden" value="MI21650" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -35,7 +35,7 @@
                             <img src="./img/21_MICHELINPilot%20Super%20Sport1.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>Pilot Super Sport</h4>
-                            <input type="hidden" value="MI14670" name="brand">
+                            <input type="hidden" value="MI21710" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -46,7 +46,7 @@
                             <img src="./img/21_MICHELINPilot%20Sport%20Cup%202.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>Pilot Sport Cup 2</h4>
-                            <input type="hidden" value="MI15710" name="brand">
+                            <input type="hidden" value="MI21750" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -57,7 +57,7 @@
                             <img src="./img/21_MICHELINPilot%20Sport%204S4.png" height="125"/>
                             <h2>MICHELIN</h2>
                             <h4>Pilot Sport 4S</h4>
-                            <input type="hidden" value="MI14437" name="brand">
+                            <input type="hidden" value="MI21850" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -68,7 +68,7 @@
                             <img src="./img/21_MICHELINPilot%20Sport%204S4.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>Pilot Sport 4S</h4>
-                            <input type="hidden" value="MI14462" name="brand">
+                            <input type="hidden" value="MI21900" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
