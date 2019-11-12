@@ -14,6 +14,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
+<form action="<%= request.getContextPath() %>/customer" method="post">
     <div class="pageBox">
         <div class="pageH1"><left><h1>เพิ่มข้อมูลลูกค้า</h1></left></div>
 
@@ -55,5 +56,6 @@
         </div>
 
     </div>
+</form>
 </body>
 </html>
