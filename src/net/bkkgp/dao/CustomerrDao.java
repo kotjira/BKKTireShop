@@ -12,25 +12,24 @@ public class CustomerrDao {
 
     public int registerCustomerr(Customerr customerr) throws ClassNotFoundException{
         String INSERT_USERS_SQL = "INSERT INTO customer" +
-                "  (Customer_ID, Cu_Name,Cu_Surname, Cu_Gender,Cu_Address,Cu_Nationality,Cu_Tel,Cu_Email) VALUES " +
-                " (?,?,?,?,?,?,?,?);";
+                "  (Cu_Name,Cu_Surname, Cu_Gender,Cu_Address,Cu_Nationality,Cu_Tel,Cu_Email) VALUES " +
+                " (?,?,?,?,?,?,?);";
 
         int result = 0;
 
         Class.forName("com.mysql.jdbc.Driver");
 
-        try (Connection connection = DriverManager
-                .getConnection("jdbc:mysql://167.99.76.137:3306/BKK GROUP?useSSL=false", "bkkgroup", "212224236248");
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://167.99.76.137:3306/BKK GROUP?useSSL=false", "bkkgroup", "212224236248");
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
             preparedStatement.setString(1, customerr.getFirstName1());
             preparedStatement.setString(2, customerr.getLastName1());
             preparedStatement.setString(3, customerr.getSex1());
-            preparedStatement.setString(5, customerr.getHomeID1()+"/"+customerr.getPost1());
-            preparedStatement.setString(6, customerr.getPhoneMe1());
-            preparedStatement.setString(8, customerr.getNationality1());
-            preparedStatement.setString(10, customerr.getEmail1());
+            preparedStatement.setString(4, customerr.getHomeID1()+"/"+customerr.getPost1());
+            preparedStatement.setString(5, customerr.getNationality1());
+            preparedStatement.setString(6,customerr.getPhoneMe1());
+            preparedStatement.setString(7, customerr.getEmail1());
 
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
