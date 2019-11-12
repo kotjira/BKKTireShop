@@ -24,7 +24,7 @@
                             <img src="./img/20_Tire01h870px1.png" height="125" />
                             <h2>TOYO TIRES</h2>
                             <h4>PROXES T1 SPORT SUV</h4>
-                            <input type="hidden" value="MI14530" name="brand">
+                            <input type="hidden" value="BR20690" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -35,7 +35,7 @@
                             <img src="./img/20_Proxes-R888R2.png" height="125" />
                             <h2>TOYO TIRES</h2>
                             <h4>PROXES R888 R</h4>
-                            <input type="hidden" value="MI14670" name="brand">
+                            <input type="hidden" value="BR20730" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -46,7 +46,7 @@
                             <img src="./img/20_Potenza_Adrenalin_RE003_Tilted%20-%202000x2000px-20%203.png" height="125" />
                             <h2>BRIDGESTONE</h2>
                             <h4>POTENZA Adrenalin RE003</h4>
-                            <input type="hidden" value="MI15710" name="brand">
+                            <input type="hidden" value="PI20975" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -57,7 +57,7 @@
                             <img src="./img/20_Potenza_Adrenalin_RE003_Tilted%20-%202000x2000px-20%203.png" height="125"/>
                             <h2>BRIDGESTONE</h2>
                             <h4>POTENZA Adrenalin RE003</h4>
-                            <input type="hidden" value="MI14437" name="brand">
+                            <input type="hidden" value="TO20800" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -68,7 +68,7 @@
                             <img src="./img/20_pirelli-scorpion-verde5.png" height="125" />
                             <h2>PIRELLI</h2>
                             <h4>SCORPION VERDE</h4>
-                            <input type="hidden" value="MI14462" name="brand">
+                            <input type="hidden" value="TO20950" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>

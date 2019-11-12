@@ -24,7 +24,7 @@
                             <img src="./img/19_BRIDGESTONEPOTENZA%201.png" height="125" />
                             <h2>BRIDGESTONE</h2>
                             <h4>POTENZA Adrenalin RE003</h4>
-                            <input type="hidden" value="MI14530" name="brand">
+                            <input type="hidden" value="BR19650" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -35,7 +35,7 @@
                             <img src="./img/19_BRIDGESTONEPOTENZA%201.png" height="125" />
                             <h2>BRIDGESTONE</h2>
                             <h4>POTENZA Adrenalin RE003</h4>
-                            <input type="hidden" value="MI14670" name="brand">
+                            <input type="hidden" value="BR19750" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -46,7 +46,7 @@
                             <img src="./img/19_primacy-3st-195-65R15%203.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>Primacy 3</h4>
-                            <input type="hidden" value="MI15710" name="brand">
+                            <input type="hidden" value="BR19800" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -57,7 +57,7 @@
                             <img src="./img/19_primacy-3st-195-65R15%203.png" height="125"/>
                             <h2>MICHELIN</h2>
                             <h4>Primacy 3</h4>
-                            <input type="hidden" value="MI14437" name="brand">
+                            <input type="hidden" value="MI19750" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -68,7 +68,7 @@
                             <img src="./img/19_HANKOOK%205.png" height="125" />
                             <h2>HANKOOK</h2>
                             <h4>Ventus V12 evo2 (K120)</h4>
-                            <input type="hidden" value="MI14462" name="brand">
+                            <input type="hidden" value="MI19825" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
