@@ -15,7 +15,7 @@ import java.io.IOException;
  * @email Ramesh Fadatare
  */
 
-@WebServlet("/register")
+@WebServlet("/customerr")
 public class CustomerrServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private CustomerrDao customerrDao;
