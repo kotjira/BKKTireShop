@@ -24,7 +24,7 @@
                             <img src="./img/16_MICHELINENERGY%20XM2%201.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>ENERGY XM2+</h4>
-                            <input type="hidden" value="MI14530" name="brand">
+                            <input type="hidden" value="GO16690" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -35,7 +35,7 @@
                             <img src="./img/16_MICHELINENERGY%20XM2%201.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>ENERGY XM2+</h4>
-                            <input type="hidden" value="MI14670" name="brand">
+                            <input type="hidden" value="MI14690" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>

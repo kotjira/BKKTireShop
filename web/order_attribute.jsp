@@ -18,9 +18,20 @@
     </div>
 
     <div class="pageOrder" style="overflow-y:scroll;height:420px">
+        <table align="center">
+            <tr>
+                <th width="80px"><p>รหัสลูกค้า</p></th> <td width="150px"><p>FE61000044</p></td> <th width="50px"><p>ชือ</p></th> <td width="150px"><p>บุษกร</p></td> <th width="80px"> <p>นามสกุล</p></th > <td width="150px"><p>ศุภกิจอำนวย</p></td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <th width="80px"><p>ที่อยู่</p></th> <td width="150px"><p>อ.สำโรง สมุทรปราการ </p></td> <th width="80"><p>รหัสไปษณียร์</p></th> <td width="150px"><p>12540</p></td>
+            </tr>
+        </table>
+        <br>
         <table>
             <tr>
-                <th width="150px"><p>รหัสลูกค้า</p></th> <td width="150px"><p>FE61000044</p></td> <th width="150px"><p>ชือ</p></th> <td width="150px"><p>บุษกร</p></td> <th width="150px"> <p>นามสกุล</p></th width="150px"> <td width="150px"><p>ศุภกิจอำนวย</p></td>
+                <th>รหัสใบสั่งสินค้า </th> <th>รหัสสินค้า</th> <th>ชื่อสินค้า</th> <th>จำนวน(ล้อ)</th> <th>ราคา</th>
             </tr>
         </table>
     </div>
