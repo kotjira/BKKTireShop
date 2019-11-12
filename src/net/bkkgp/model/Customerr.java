@@ -11,119 +11,63 @@ public class Customerr implements Serializable {
      *
      */
     private static final long serialVersionUID = 1L;
-    private String firstName;
-    private String lastName;
-    private String birthDay;
-    private String birthMonth;
-    private String birthYear;
-    private String sex;
-    private String nationality;
-    private String homeID;
-    private String post;
-    private String phoneMe;
-    private String email;
-    private String education;
-    private String Position;
-    private String userName;
-    private String password1;
-    private String password2;
+    private String firstName1;
+    private String lastName1;
+    private String sex1;
+    private String nationality1;
+    private String homeID1;
+    private String post1;
+    private String phoneMe1;
+    private String email1;
 
-    public String getFirstName() {
+    public String getFirstName1() {
 
-        return firstName;
+        return firstName1;
     }
-    public void setFirstName(String firstName) {
+    public void setFirstName1(String firstName1) {
 
-        this.firstName = firstName;
+        this.firstName1 = firstName1;
     }
-    public String getLastName() {
-        return lastName;
+    public String getLastName1() {
+        return lastName1;
     }
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName1(String lastName1) {
+        this.lastName1 = lastName1;
     }
-    public String getBirthDay() {
-        return birthDay;
+    public String getSex1() {
+        return sex1;
     }
-    public void setBirthDay(String birthDay) {
-        this.birthDay = birthDay;
+    public void setSex1(String sex1) {
+        this.sex1 = sex1;
     }
-    public String getBirthMonth() {
-        return birthMonth;
+    public String getNationality1() {
+        return nationality1;
     }
-    public void setBirthMonth(String birthMonth) {
-        this.birthMonth = birthMonth;
+    public void setNationality1(String nationality1) {
+        this.nationality1 = nationality1;
     }
-    public String getBirthYear() {
-        return birthYear;
+    public String getHomeID1() {
+        return homeID1;
     }
-    public void setBirthYear(String birthYear) {
-        this.birthYear = birthYear;
+    public void setHomeID1(String homeID1) {
+        this.homeID1 = homeID1;
     }
-    public String getSex() {
-        return sex;
+    public String getPost1() {
+        return post1;
     }
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setPost1(String post1) {
+        this.post1 = post1;
     }
-    public String getNationality() {
-        return nationality;
+    public String getPhoneMe1() {
+        return phoneMe1;
     }
-    public void setNationality(String nationality) {
-        this.nationality = nationality;
+    public void setPhoneMe1(String phoneMe1) {
+        this.phoneMe1 = phoneMe1;
     }
-    public String getHomeID() {
-        return homeID;
+    public String getEmail1() {
+        return email1;
     }
-    public void setHomeID(String homeID) {
-        this.homeID = homeID;
-    }
-    public String getPost() {
-        return post;
-    }
-    public void setPost(String post) {
-        this.post = post;
-    }
-    public String getPhoneMe() {
-        return phoneMe;
-    }
-    public void setPhoneMe(String phoneMe) {
-        this.phoneMe = phoneMe;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    public String getEducation() {
-        return education;
-    }
-    public void setEducation(String education) {
-        this.education = education;
-    }
-    public String getPosition() {
-        return Position;
-    }
-    public void setPosition(String Position) {
-        this.Position = Position;
-    }
-    public String getUserName() {
-        return userName;
-    }
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-    public String getPassword1() {
-        return password1;
-    }
-    public void setPassword1(String password1) {
-        this.password1 = password1;
-    }
-    public String getPassword2() {
-        return password1;
-    }
-    public void setPassword2(String password2) {
-        this.password2 = password2;
+    public void setEmail1(String email1) {
+        this.email1 = email1;
     }
 }
