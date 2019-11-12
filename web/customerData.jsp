@@ -21,70 +21,70 @@
     <div class="pageDataTB" style="overflow-y:scroll;height:420px">
         <table bgcolor="#f5f5dc" border="1" cellspacing="0" align="center" >
             <tr align="center" bgcolor="#ff8c00">
-                <th width="100px"  >รหัสลูกค้า</th> <th width="100px">ชื่อ</th> <th width="100px">นามสกุล</th> <th width="50px">เพศ</th> <th width="50px">สัญชาติ</th> <th width="200px">ที่อยู่</th> <th width="100px">เบอร์โทรศัพท์</th> <th width="150px">Email</th> <th>แก้ไข</th>
+                <th width="100px"  >รหัสลูกค้า</th> <th width="100px">ชื่อ</th> <th width="100px">นามสกุล</th> <th width="50px">เพศ</th> <th width="50px">สัญชาติ</th> <th width="200px">ที่อยู่</th> <th width="50px">รหัสไปษณียร์</th><th width="100px">เบอร์โทรศัพท์</th> <th width="150px">Email</th> <th>แก้ไข</th>
             </tr>
             <tr>
-                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> </td>
+                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
-                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000001</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000002</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000003</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000004</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                <td>ME61000005</td> <td>ไกรวิทย์</td> <td>รูปโฉม</td> <td>ชาย</td> <td>ไทย</td> <td>429 ปราณบุรี จ.ประจวบฯ</td><td>77120</td> <td>0971326965</td> <td>kraiwitroopchom@gmail.com</td> <td align="center"><a href="edit_CustomerData.jsp"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center"><a href="add_CustomerData.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center"><a href="add_CustomerData.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
             </tr>
         </table>
     </div>

@@ -15,9 +15,48 @@
 </head>
 <body>
 <div class="pageBox">
-    <div class="pageH1"><left><h1>แก้ไขข้อมูลลูกค้า</h1></left></div>
-    <div class="pageH" align="right"> <a href="customerData.jsp"><button class="buttonBack" style="vertical-align:middle"><span>BACK </span> </button></a>
+    <div class="pageH1"><left><h1>เพิ่มข้อมูลลูกค้า</h1></left></div>
+
+
+    <div class="pageAdd" style="overflow-y:hidden;height:420px" align="center">
+        <table>
+            <tr>
+                <td width="300px"><p>ชื่อ</p><input type="text" name="firstName" placeholder="Name"> </td>
+                <td width="300px"><p>นามสกุล</p><input type="text" name="lastName" placeholder="LastName"></td>
+            </tr>
+            <tr>
+                <td> <p>เพศ</p><SELECT name="sex" required><p><font size="3" color="red">${errorInSex}</font></p>
+                    <OPTION SELECTED value="">Gender</OPTION>
+                    <OPTION VALUE=Male>male</OPTION>
+                    <OPTION VALUE=Female>female</OPTION>
+                    <OPTION VALUE=Other>other</OPTION>
+                </SELECT>
+                </td> <td> <p>สัญชาติ</p><input type="text" name="nationality" placeholder="Nationality"> </td>
+            </tr>
+            <tr>
+                <td><p>ที่อยู่</p><input type="text" name="homeID" placeholder="Address"></td>
+                <td> <p>รหัสไปษณียร์</p><input type="number" name="post" placeholder="The Post Office"></td>
+            </tr>
+            <tr>
+                <td><p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe" placeholder="Phone Number"></td>
+                <td><p>อีเมล์</p><input type="text" name="email" placeholder="E-mail"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <a href="customerData.jsp"><button class="buttonDelete" style="vertical-align:middle"><span>Delete </span> </button></a>
+                </td>
+                <td>
+                    <a href="customerData.jsp"><button class="buttonCancel" style="vertical-align:middle"><span>Cancel </span> </button></a>
+                </td>
+                <td>
+                    <a href="customerData.jsp"><button class="buttonConfirm" style="vertical-align:middle"><span>Confirm </span> </button></a>
+                </td>
+            </tr>
+        </table>
     </div>
+
 </div>
 </body>
 </html>
