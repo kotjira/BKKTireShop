@@ -72,7 +72,7 @@
                 <td> OR000016</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
             </tr>
             <tr>
-                <td></td><td></td><td></td><td></td><td align="center"><a href="order_add.jsp.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
+                <td></td><td></td><td></td><td></td><td align="center"><a href="order_add.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
 

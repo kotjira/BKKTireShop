@@ -30,16 +30,20 @@ body
 }
 
 
+
+
+
 .buttonBack {
     display: inline-block;
     border-radius: 4px;
-    background-color: #858585;
-    border: none;
-    color: #FFFFFF;
+    border-width: 1px;
+    border-color: #ff7006 ;
+    background-color: #ffffff;
+    color: #ff7006;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     padding: 10px;
-    width: 250px;
+    width: 200px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -71,6 +75,136 @@ body
     left: 0;
 }
 
+
+
+.buttonCancel {
+    display: inline-block;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #ff7006 ;
+    background-color: #ffffff;
+    color: #ff7006;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonCancel span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonCancel span:after {
+    content: '↩';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.buttonCancel:hover span {
+    padding-left: 25px;
+}
+
+.buttonCancel:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+.buttonPrint {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff7006;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonPrint span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonPrint span:after {
+    content: '➲';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonPrint:hover span {
+    padding-right: 25px;
+}
+
+.buttonPrint:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+.buttonEdit {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    background-color: #757575;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.buttonEdit span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonEdit span:after {
+    content: '✎ ';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonEdit:hover span {
+    padding-right: 25px;
+}
+
+.buttonEdit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
 .pageOrder{
     width: 1070px;
     height: 370px;
@@ -81,9 +215,159 @@ body
 }
 
 
+
 .pageH1 {
     float: left;
 }
 .pageH {
     float: right;
+}
+
+
+.pageOrderAdd{
+    width: 1070px;
+    height: 370px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 45px;
+}
+
+.pageOrderAdd p
+{
+    margin: 0px;
+    padding: 0;
+    font-weight: bold;
+    color: #353535;
+}
+.pageOrderAdd input
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pageOrderAdd input[type= "text"],
+.pageOrderAdd input[type= "password"],
+.pageOrderAdd input[type="number"]
+
+{
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background: transparent;
+    outline: none ;
+    height: 40px;
+    color: #484848;
+    font-size: 16px;
+}
+::placeholder
+{
+    color: rgba(255,255,255,.5);
+}
+.pageOrderAdd input[type="submit"]
+{
+    border : none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #ff8c00;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.pageOrderAdd input[type="submit"]:hover
+{
+    background: #dc6104;
+    color: #ffffff;
+}
+.pageOrderAdd a
+{
+    color: #242424;
+    font-size: 14px ;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.buttonCancel {
+    display: inline-block;
+    border-radius: 4px;
+    border-color: #ff7006 ;
+    border-width: 1px;
+    background-color: #ffffff;
+    color: #ff7006;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonCancel span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonCancel span:after {
+    content: '✖ ';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.buttonCancel:hover span {
+    padding-left: 25px;
+}
+
+.buttonCancel:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+
+
+.buttonConfirm {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ff7006;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonConfirm span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonConfirm span:after {
+    content: '✔ ';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonConfirm:hover span {
+    padding-right: 25px;
+}
+
+.buttonConfirm:hover span:after {
+    opacity: 1;
+    right: 0;
 }
