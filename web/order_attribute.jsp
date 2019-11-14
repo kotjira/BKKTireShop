@@ -29,9 +29,12 @@
             </tr>
         </table>
         <br>
-        <table>
+        <table bgcolor="#98fb98" align="center" border="1" cellspacing="0" align="center" >
+            <tr bgcolor="#32cd32">
+                <th width="150px">รหัสใบสั่งสินค้า </th> <th width="150px">รหัสสินค้า</th> <th width="150px">ชื่อสินค้า</th> <th width="50px">จำนวน(ล้อ)</th> <th width="150px">ราคา</th> <th width="50px">แก้ไข</th>
+            </tr>
             <tr>
-                <th>รหัสใบสั่งสินค้า </th> <th>รหัสสินค้า</th> <th>ชื่อสินค้า</th> <th>จำนวน(ล้อ)</th> <th>ราคา</th>
+                <td>OR000001</td> <td>NT52014</td> <td>Misubishi</td> <td>4</td> <td>3000</td> <td></td>
             </tr>
         </table>
     </div>

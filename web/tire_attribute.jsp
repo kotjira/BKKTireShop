@@ -14,7 +14,15 @@
 <body>
 <div class="pageBox">
     <div class="pageH1"><left><h1>คุณสมบัติ</h1></left></div>
-    <div class="pageH" align="right"> <a href="tire.jsp"><button class="buttonBack" style="vertical-align:middle"><span>BACK </span> </button></a>
+    <div class="pageH" align="right">
+        <table>
+            <tr>
+                <a href="tire.jsp"><button class="buttonBack" style="vertical-align:middle"><span>BACK </span> </button></a>
+            </tr>
+            <tr>
+                <a href="tire.jsp"><button class="buttonAddOrder" style="vertical-align:middle"><span>Add Order</span> </button></a>
+            </tr>
+        </table>
     </div>
 
     <div class="pageGen" style="overflow-y:hidden;height:420px">
