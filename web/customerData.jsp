@@ -92,11 +92,10 @@
             %>
 
             <tr>
-                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center"><a href="add_CustomerData.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align="center"><a href="CustomerData_add.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
             </tr>
         </table>
     </div>
-fgdherhreh
 </div>
 </body>
 </html>
