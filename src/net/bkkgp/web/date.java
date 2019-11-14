@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 import java.sql.*;
 import java.util.ArrayList;
 
-@WebServlet("/attribute")
+@WebServlet("/datee")
 public class date extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -31,16 +31,14 @@ public class date extends HttpServlet {
             String dbPass = "212224236248";
             Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
-            PreparedStatement ps = con.prepareStatement("select * from orders where Order_date = ?");
+            PreparedStatement ps = con.prepareStatement("select * from orders ");
 
-            ps.setString(1, roll);
 
             //out.print("<table width=50% border=1>");
             //out.print("<caption>Result:</caption>");
             ResultSet rs = ps.executeQuery();
             String contextpath = "${pageContext.request.contextPath}";
             /* Printing column names */
-            ResultSetMetaData rsmd = rs.getMetaData();
             ArrayList<String> Day = new ArrayList<String>();
             ArrayList<String> Month = new ArrayList<String>();
             ArrayList<String> Year = new ArrayList<String>();
@@ -67,9 +65,9 @@ public class date extends HttpServlet {
                         }
                     }else {
                         if (dash == 1){
-                            System.out.println("Day "+d);
+                            System.out.println("Year "+y);
                             dash = dash+1;
-                            Day.add(d);
+                            Year.add(y);
                         }
                         if (dash == 2){
                             System.out.println("Month "+m);
@@ -77,10 +75,11 @@ public class date extends HttpServlet {
                             Month.add(m);
                         }
                         if (dash == 3){
-                            System.out.println("Year "+y);
+                            System.out.println("Day "+d);
                             dash = dash+1;
-                            Year.add(y);
+                            Day.add(d);
                         }
+
                     }
 
                 }
