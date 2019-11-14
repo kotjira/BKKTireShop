@@ -24,7 +24,7 @@
                             <img src="./img/16_MICHELINENERGY%20XM2%201.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>ENERGY XM2+</h4>
-                            <input type="hidden" value="MI14530" name="brand">
+                            <input type="hidden" value="GO16690" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -35,7 +35,7 @@
                             <img src="./img/16_MICHELINENERGY%20XM2%201.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>ENERGY XM2+</h4>
-                            <input type="hidden" value="MI14670" name="brand">
+                            <input type="hidden" value="MI16580" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -46,7 +46,7 @@
                             <img src="./img/16_MICHELINENERGY%20XM2%201.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>ENERGY XM2+</h4>
-                            <input type="hidden" value="MI15710" name="brand">
+                            <input type="hidden" value="MI16615" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -57,7 +57,7 @@
                             <img src="./img/16_MICHELINENERGY%20XM2%201.png" height="125" />
                             <h2>MICHELIN</h2>
                             <h4>ENERGY XM2+</h4>
-                            <input type="hidden" value="MI14437" name="brand">
+                            <input type="hidden" value="MI16630" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -68,7 +68,7 @@
                             <img src="./img/16_GOODYEARASSURANCE%20DURAPLUS%205.png" height="125" />
                             <h2>GOODYEAR</h2>
                             <h4>ASSURANCE DURAPLUS 2</h4>
-                            <input type="hidden" value="MI14462" name="brand">
+                            <input type="hidden" value="MI16690" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>

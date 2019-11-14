@@ -24,7 +24,7 @@
                             <img src="./img/18_Nexen-NFera-SU1%201.png" height="125" />
                             <h2>NEXEN</h2>
                             <h4>N FERA SU1</h4>
-                            <input type="hidden" value="MI14530" name="brand">
+                            <input type="hidden" value="GO18630" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -35,7 +35,7 @@
                             <img src="./img/18_Nexen-NFera-SU4%202.png" height="125" />
                             <h2>NEXEN</h2>
                             <h4>N FERA SU4</h4>
-                            <input type="hidden" value="MI14670" name="brand">
+                            <input type="hidden" value="HA18630" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -46,7 +46,7 @@
                             <img src="./img/18_PIRELLISCORPION%20VERDE%203.png" height="125" />
                             <h2>PIRELLI</h2>
                             <h4>SCORPION VERDE</h4>
-                            <input type="hidden" value="MI15710" name="brand">
+                            <input type="hidden" value="NE18630" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -57,7 +57,7 @@
                             <img src="./img/18_Goodyear%204.png" height="125"/>
                             <h2>GOODYEAR</h2>
                             <h4>EAGLE F1 DIRECTIONAL 5</h4>
-                            <input type="hidden" value="MI14437" name="brand">
+                            <input type="hidden" value="NE18690" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>
@@ -68,7 +68,7 @@
                             <img src="./img/18_HANKOOK%205.png" height="125" />
                             <h2>HANKOOK</h2>
                             <h4>Ventus V12 evo2 (K120)</h4>
-                            <input type="hidden" value="MI14462" name="brand">
+                            <input type="hidden" value="PI18106" name="brand">
                             <center><a href="tire_attribute.jsp"><button type="submit" class="buttonAttribute" style="vertical-align:middle"><span>คุณสมบัติ</span> </button></a></center>
                         </form>
                     </div>

@@ -27,14 +27,14 @@ public class CustomerrServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
-        String sex = request.getParameter("sex");
-        String nationality = request.getParameter("nationality");
-        String homeID = request.getParameter("homeID");
-        String post = request.getParameter("post");
-        String phoneMe = request.getParameter("phoneMe");
-        String email = request.getParameter("email");
+        String firstName = request.getParameter("firstName1");
+        String lastName = request.getParameter("lastName1");
+        String sex = request.getParameter("sex1");
+        String nationality = request.getParameter("nationality1");
+        String homeID = request.getParameter("homeID1");
+        String post = request.getParameter("post1");
+        String phoneMe = request.getParameter("phoneMe1");
+        String email = request.getParameter("email1");
 
         Customerr customerr = new Customerr();
         customerr.setFirstName1(firstName);
