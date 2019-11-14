@@ -11,6 +11,13 @@
     <title>รายละเอียดใบสั่งสินค้า</title>
     <link rel="stylesheet" href="css_order.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script language="JavaScript">
+        window.print();
+        parent.framename.print();
+        document.frames('iFrameName').print();
+        window.self.print();
+        print();
+    </script>
 </head>
 <body>
 <div class="pageBox">
@@ -25,7 +32,7 @@
         </table>
         <table align="center">
             <tr>
-                <th width="80px"><p>ที่อยู่</p></th> <td width="150px"><p>อ.สำโรง สมุทรปราการ </p></td> <th width="80"><p>รหัสไปษณียร์</p></th> <td width="150px"><p>12540</p></td>
+                <th width="80px"><p>ที่อยู่</p></th> <td width="150px"><p>อ.สำโรง สมุทรปราการ </p></td> <th width="80"><p>รหัสไปรษณีย์</p></th> <td width="150px"><p>12540</p></td>
             </tr>
         </table>
         <br>
@@ -51,13 +58,14 @@
         <table align="center">
             <tr>
                 <td>
-                    <button class="buttonEdit" style="vertical-align:middle"><span>Edit </span> </button>
+                    <a href="order_edit.jsp"><button class="buttonEdit" style="vertical-align:middle"><span>Edit </span> </button></a>
                 </td>
                 <td>
-                    <button class="buttonPrint" style="vertical-align:middle"><span>Print </span> </button>
+                    <button onClick="JavaScript:window.print();" class="buttonPrint" style="vertical-align: middle"><span>Print </span></button>
                 </td>
                 <td>
-                    <button class="buttonCancel" style="vertical-align:middle"><span>Cancel </span> </button>
+                     <a href="order.jsp"><button class="buttonCancel" style="vertical-align:middle"><span>Cancel </span> </button></a>
+
                 </td>
             </tr>
         </table>

@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="pageBox">
-    <div class="pageH1"><left><h1>เพิ่มข้อมูลลูกค้า</h1></left></div>
+    <div class="pageH1"><left><h1>เแก้ไขข้อมูลลูกค้า</h1></left></div>
 
 
     <div class="pageAdd" style="overflow-y:hidden;height:420px" align="center">

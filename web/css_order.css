@@ -371,3 +371,108 @@ body
     opacity: 1;
     right: 0;
 }
+
+
+.pageOrderEdit{
+    width: 1070px;
+    height: 370px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 45px;
+}
+
+.pageOrderEdit p
+{
+    margin: 0px;
+    padding: 0;
+    font-weight: bold;
+    color: #353535;
+}
+.pageOrderEdit input
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pageOrderEdit input[type= "text"],
+.pageOrderEdit input[type= "password"],
+.pageOrderEdit input[type="number"]
+
+{
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background: transparent;
+    outline: none ;
+    height: 40px;
+    color: #484848;
+    font-size: 16px;
+}
+::placeholder
+{
+    color: rgba(255,255,255,.5);
+}
+.pageOrderEdit input[type="submit"]
+{
+    border : none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #ff8c00;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.pageOrderEdit input[type="submit"]:hover
+{
+    background: #dc6104;
+    color: #ffffff;
+}
+.pageOrderEdit a
+{
+    color: #242424;
+    font-size: 14px ;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.buttonDelete {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #cf120f;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buttonDelete span {
+    font-family: srinakharinwirot , sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonDelete span:after {
+    content: '⌦ ';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.buttonDelete:hover span {
+    padding-right: 25px;
+}
+
+.buttonDelete:hover span:after {
+    opacity: 1;
+    right: 0;
+}
