@@ -47,7 +47,16 @@ public class tire extends HttpServlet {
                 out.print("</head>");
                 out.print("<body>");
                 out.print("<div class=\"pageBox\">");
-                out.print("<div class=\"pageH\" align=\"right\"> <a href=\"tire.jsp\"><button class=\"buttonBack\" style=\"vertical-align:middle\"><span>BACK </span> </button></a>");
+                out.print("<div class=\"pageH1\"><left><h1>คุณสมบัติ</h1></left></div>");
+                out.print("<div class=\"pageH\" align=\"right\">");
+                out.print("<table>");
+                out.print("<tr>");
+                out.print("<a href=\"tire_generation"+rs.getString("Wheel_diameter")+".jsp\"><button class=\"buttonBack\" style=\"vertical-align:middle\"><span>BACK </span> </button></a>");
+                out.print("</tr>");
+                out.print("<tr>");
+                out.print("<a href=\"tire.jsp\"><button class=\"buttonAddOrder\" style=\"vertical-align:middle\"><span>Add Order</span> </button></a>");
+                out.print("</tr>");
+                out.print("</table>");
                 out.print("</div>");
                 out.print("<div class=\"pageGen\" style=\"overflow-y:hidden;height:420px\">");
                 out.print("<table>");
