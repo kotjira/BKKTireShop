@@ -32,7 +32,7 @@
         </table>
         <table align="center">
             <tr>
-                <th width="80px"><p>ที่อยู่</p></th> <td width="150px"><p>อ.สำโรง สมุทรปราการ </p></td> <th width="80"><p>รหัสไปรษณีย์</p></th> <td width="150px"><p>12540</p></td>
+                <th width="80px"><p>ที่อยู่</p></th> <td width="150px"><p>อ.สำโรง สมุทรปราการ </p></td> <th width="80"><p>รหัสไปรษณีย์</p></th> <td width="150px"><p>12540</p></td> <th width="80"><p>วันจัดส่ง</p></th> <td width="150px"><p>14/11/2562</p></td>
             </tr>
         </table>
         <br>
