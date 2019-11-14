@@ -79,3 +79,12 @@ body
 .pageH {
     float: right;
 }
+
+.pageDataTB{
+    width: 1070px;
+    height: 370px;
+    padding: 30px 30px ;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 45px;
+}
