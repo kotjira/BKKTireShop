@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td><p>ที่อยู่</p><input type="text" name="homeID1" placeholder="Address"></td>
-                    <td> <p>รหัสไปษณียร์</p><input type="number" name="post1" placeholder="The Post Office"></td>
+                    <td> <p>รหัสไปรษณีย์</p><input type="number" name="post1" placeholder="The Post Office"></td>
                 </tr>
                 <tr>
                     <td><p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe1" placeholder="Phone Number"></td>

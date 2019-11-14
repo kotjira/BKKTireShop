@@ -174,7 +174,7 @@
                     </SELECT>
                     <p>สัญชาติ</p><input type="text" name="nationality" placeholder="Nationality">
                     <p>ที่อยู่</p><input type="text" name="homeID" placeholder="Address">
-                    <p>รหัสไปษณียร์</p><input type="number" name="post" placeholder="The Post Office">
+                    <p>รหัสไปรษณีย์</p><input type="number" name="post" placeholder="The Post Office">
                     <p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe" placeholder="Phone Number">
                     <p>อีเมล์</p><input type="text" name="email" placeholder="E-mail">
                     <p>การศึกษา</p><input type="text" name="education" placeholder="Education level">

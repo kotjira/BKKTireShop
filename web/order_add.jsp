@@ -11,7 +11,24 @@
     <title>เพิ่มใบสั่งสินค้า</title>
     <link rel="stylesheet" href="css_order.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <script type="text/javascript" >
+        function CreateTextbox(){
+            var i = 1;
+            createTextbox.innerHTML = createTextbox.innerHTML +"<input type=text name='mytxt'+ i/>" +
+                "<table>\n" +
+                "            <tr>\n" +
+                "                <td width=\"300px\"><p>รหัสสินค้า</p><input type=\"text\" name=\"IdTire\" placeholder=\"Tire ID\"> </td>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td width=\"300px\"><p>ยี่ห้อ</p><input type=\"text\" name=\"brand\" placeholder=\"ฺBrand\"></td>\n" +
+                "                <td width=\"300px\"><p>รุ่น</p><input type=\"text\" name=\"generation\" placeholder=\"Generation\"> </td>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td width=\"300px\"><p>จำนวน (เส้น)</p><input type=\"text\" name=\"NumTire\" placeholder=\"Trie Number\"> </td>\n" +
+                "            </tr>\n" +
+                "        </table>"
+        }
+    </script>
 </head>
 <body>
 <div class="pageBox">
@@ -37,7 +54,7 @@
             </tr>
             <tr>
                 <td><p>ที่อยู่</p><input type="text" name="homeID1" placeholder="Address"></td>
-                <td> <p>รหัสไปษณียร์</p><input type="number" name="post1" placeholder="The Post Office"></td>
+                <td> <p>รหัสไปรษณีย์</p><input type="number" name="post1" placeholder="The Post Office"></td>
             </tr>
             <tr>
                 <td><p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe1" placeholder="Phone Number"></td>
@@ -46,6 +63,7 @@
         </table>
         <br>
         <br>
+
         <table>
             <tr>
                 <td width="300px"><p>รหัสสินค้า</p><input type="text" name="IdTire" placeholder="Tire ID"> </td>
@@ -59,18 +77,19 @@
             </tr>
         </table>
         <br>
-        <table align="center">
-            <tr>
-                <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </tr>
-        </table>
+        <form name="form" action="post" method="">
+
+            <div id="createTextbox"></div>
+            <i onclick="CreateTextbox();" class="fa fa-plus-circle" aria-hidden="true"></i>
+        </form>
+
         <br>
         <table>
             <tr>
 
                 <td>
                     <button class="buttonConfirm" style="vertical-align:middle" type="submit"><span>Confirm </span> </button>
-                </td></form>
+                </td>
                 <td>
                     <a href="order.jsp"><button class="buttonCancel" style="vertical-align:middle" type="button"><span>Cancel </span> </button></a>
                 </td>
