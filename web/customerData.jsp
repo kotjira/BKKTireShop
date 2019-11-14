@@ -82,11 +82,11 @@
             </tr>
             <%
                 int length = id.length;
-                for(int i=0;i<id.length;i++){
+                for(int i=0 ; i<id.length ; i++){
                     response.setContentType("text/html");
                     out.print("<tr>");
                     out.print(" <td>"+id[i]+"</td> <td>"+firstname[i]+"</td> <td>"+lastname[i]+"</td> <td>"+gender[i]+"</td> <td>"+nationality[i]+"</td> <td>"+address[i]+"</td><td>"+postid[i]+"</td> <td>"+tel[i]+"</td> <td>"+email[i]+"</td> <td align=\"center\">" +
-                            "<form action=\"BKK_Tire_shop_war_exploded/getcustomerData\" method=\"get\"><input type=\"hidden\" name=\"id\" value=\""+id[i]+"\"><button class=\"fa fa-pencil-square-o\" aria-hidden=\"true\" style=\"border-width:0px;\" type=\"submit\"> </button> </td></form>");
+                            "<form action=\"getcustomerData\" method=\"get\"><input type=\"hidden\" name=\"id\" value=\""+id[i]+"\"><button class=\"fa fa-pencil-square-o\" aria-hidden=\"true\" style=\"background-color:#f5f5dc;border-width:0px;\" type=\"submit\"> </button> </td></form>");
                     out.print("</tr>");
                 }
             %>
@@ -96,6 +96,7 @@
             </tr>
         </table>
     </div>
+</div>
 </div>
 </body>
 </html>

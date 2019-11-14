@@ -44,19 +44,40 @@ public class EditCustomerData extends HttpServlet {
             ResultSetMetaData rsmd = rs.getMetaData();
 
             /* Printing result */
+            String id,name,surname,gender,address,nationality,tel,email,postid;
             while (rs.next()) {
-                request.setAttribute("Name",rs.getString("Cu_Name"));
-                request.setAttribute("Surname",rs.getString("Cu_Surname"));
-                request.setAttribute("Gender",rs.getString("Cu_Gender"));
-                request.setAttribute("Address",rs.getString("Cu_Address"));
-                request.setAttribute("Nationality",rs.getString("Cu_Nationality"));
-                request.setAttribute("Tel",rs.getString("Cu_Tel"));
-                request.setAttribute("Email",rs.getString("Cu_Email"));
-                request.setAttribute("postId",rs.getString("Cu_postId"));
+                id = rs.getString("Customer_ID");
+                System.out.println(id);
+                session.setAttribute("ID",id);
+                name = rs.getString("Cu_Name");
+                System.out.println(name);
+                session.setAttribute("Name",name);
+                surname = rs.getString("Cu_Name");
+                System.out.println(surname);
+                session.setAttribute("Surname",rs.getString("Cu_Surname"));
+                gender = rs.getString("Cu_Gender");
+                System.out.println(gender);
+                session.setAttribute("Gender",rs.getString("Cu_Gender"));
+                address = rs.getString("Cu_Address");
+                System.out.println(address);
+                session.setAttribute("Address",rs.getString("Cu_Address"));
+                nationality = rs.getString("Cu_Nationality");
+                System.out.println(nationality);
+                session.setAttribute("Nationality",rs.getString("Cu_Nationality"));
+                tel = rs.getString("Cu_Tel");
+                System.out.println(tel);
+                session.setAttribute("Tel",rs.getString("Cu_Tel"));
+                email = rs.getString("Cu_Email");
+                System.out.println(email);
+                session.setAttribute("Email",rs.getString("Cu_Email"));
+                postid = rs.getString("Cu_PostId");
+                System.out.println(postid);
+                session.setAttribute("PostId",rs.getString("Cu_PostId"));
+
             }
             RequestDispatcher dispatch = null ;
             ServletContext context = request.getServletContext();
-            dispatch = context.getRequestDispatcher("/edit_CustomerData.jsp");
+            dispatch = context.getRequestDispatcher("/CustomerData_edit.jsp");
             dispatch.forward(request, response);
         } catch (Exception e2) {
             e2.printStackTrace();
