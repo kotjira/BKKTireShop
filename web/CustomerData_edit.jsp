@@ -62,6 +62,8 @@
 
 
     <div class="pageAdd" style="overflow-y:hidden;height:420px" align="center">
+        <form action="${pageContext.request.contextPath}/UpdateCustomerData" method="post">
+            <input type="hidden" name="ides" value="<%=ID%>">
         <table>
             <tr>
                 <td width="300px"><p>ชื่อ</p><input type="text" name="firstName" value="<%=Name%>" placeholder="Name"> </td>
@@ -93,7 +95,7 @@
             </tr>
             <tr>
                 <td><p>ที่อยู่</p><input type="text" name="homeID" value="<%=Address%>" placeholder="Address"></td>
-                <td> <p>รหัสไปษณียร์</p><input type="number" name="post" value="<%=PostId%>" placeholder="The Post Office"></td>
+                <td> <p>รหัสไปรษณีย์</p><input type="number" name="post" value="<%=PostId%>" placeholder="The Post Office"></td>
             </tr>
             <tr>
                 <td><p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe" value="<%=Tel%>" placeholder="Phone Number"></td>
@@ -103,16 +105,16 @@
         <table>
             <tr>
                 <td>
-                   <a href="CustomerData_edit.jsp?id2=<%=ID%>">  <button type="submit" value="del" class="buttonDelete" style="vertical-align:middle"><span>Delete </span> </button>
-                    </a>
+                    <button class="buttonConfirm" type="submit" style="vertical-align:middle"><span>Confirm </span> </button>
                 </td>
-                <td>
-                    <a href="customerData.jsp"><button class="buttonCancel" style="vertical-align:middle"><span>Cancel </span> </button></a>
-                </td>
-                <td>
-                    <a href="customerData.jsp"><button class="buttonConfirm" style="vertical-align:middle"><span>Confirm </span> </button></a>
-                </td>
-            </tr>
+        </form>
+        <td>
+        <a href="CustomerData_edit.jsp?id2=<%=ID%>">  <button type="submit" value="del" class="buttonDelete" style="vertical-align:middle"><span>Delete </span> </button>
+        </a></td>
+        <td>
+            <a href="customerData.jsp"><button class="buttonCancel" style="vertical-align:middle"><span>Cancel </span> </button></a>
+        </td>
+        </tr>
         </table>
     </div>
 
