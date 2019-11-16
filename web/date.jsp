@@ -105,43 +105,43 @@
                     <select name="Month">
                     <option value="">- Month -</option>
                     <%
-
+                        String monthtxt = "";
                         for (int h = 0;h < month.length;h++){
                             if(month[h].equals("1")){
-                                String monthtxt = "January";
+                                monthtxt = "January";
                             }
                             if(month[h].equals("2")){
-                                String monthtxt = "February";
+                                monthtxt = "February";
                             }
                             if(month[h].equals("3")){
-                                String monthtxt = "March";
+                                monthtxt = "March";
                             }
                             if(month[h].equals("4")){
-                                String monthtxt = "April";
+                                monthtxt = "April";
                             }
                             if(month[h].equals("5")){
-                                String monthtxt = "May";
+                                monthtxt = "May";
                             }
                             if(month[h].equals("6")){
-                                String monthtxt = "June";
+                                monthtxt = "June";
                             }
                             if(month[h].equals("7")){
-                                String monthtxt = "July";
+                                monthtxt = "July";
                             }
-                            if(month[h].equals("2")){
-                                String monthtxt = "February";
+                            if(month[h].equals("8")){
+                                monthtxt = "August";
                             }
-                            if(month[h].equals("3")){
-                                String monthtxt = "March";
+                            if(month[h].equals("9")){
+                                monthtxt = "September";
                             }
-                            if(month[h].equals("1")){
-                                String monthtxt = "January";
+                            if(month[h].equals("10")){
+                                monthtxt = "October";
                             }
-                            if(month[h].equals("2")){
-                                String monthtxt = "February";
+                            if(month[h].equals("11")){
+                                monthtxt = "November";
                             }
-                            if(month[h].equals("3")){
-                                String monthtxt = "March";
+                            if(month[h].equals("12")){
+                                monthtxt = "December";
                             }
                             out.print("<option value=\""+month[h]+"\">"+monthtxt+"</option>");
                         }
