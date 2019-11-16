@@ -63,54 +63,17 @@
             <tr bgcolor="#f08080">
                 <th width="200px">รหัสใบสั่งสินค้า</th><th width="150px">ชื่อ</th><th width="150px">นามสกุล</th><th width="150px">วันที่สั่ง</th> <th width="150px" align="center">รายละเอียด</th>
             </tr>
-            <tr>
-                <td> OR000001</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000002</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000003</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000004</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000005</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000006</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000007</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000008</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000009</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000010</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000011</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000012</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000013</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000014</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000015</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
-            <tr>
-                <td> OR000016</td> <td>บุษกร</td> <td>ศุภกิจอำนวย</td> <td>12/11/2019</td> <td align="center"><a href="order_attribute.jsp"><i class="fa fa-book" aria-hidden="true"></i></a> </td>
-            </tr>
+            <%
+                int length = orderid .length;
+                for(int i=0 ; i<orderid .length ; i++){
+                    response.setContentType("text/html");
+                    out.print("<tr>");
+                    out.print(" <td>"+orderid [i]+"</td> <td>"+firstname[i]+"</td> <td>"+lastname[i]+"</td> <td>"+date[i]+"</td>  <td align=\"center\">" +
+                            "<form action=\"getcustomerData\" method=\"get\"><input type=\"hidden\" name=\"id\" value=\""+orderid[i]+"\"><button class=\"fa fa-pencil-square-o\" aria-hidden=\"true\" style=\"background-color:#f5f5dc;border-width:0px;\" type=\"submit\"> </button> </td></form>");
+                    out.print("</tr>");
+                }
+            %>
+
             <tr>
                 <td></td><td></td><td></td><td></td><td align="center"><a href="order_add.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
             </tr>
