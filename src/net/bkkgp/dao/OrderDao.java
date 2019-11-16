@@ -12,8 +12,8 @@ public class OrderDao {
 
     public int registerOrder(Orderr orderr) throws ClassNotFoundException{
         String INSERT_USERS_SQL = "INSERT INTO orders" +
-                "  (Product_ID,Customer_ID,Order_name,Quantity,Price,Total_amount,Order_date) VALUES " +
-                " (?,?,?,?,?,?,?);";
+                "  (Product_ID,Customer_ID,Order_name,Order_surname,Order_brand,Quantity,Price,Total_amount,Order_date) VALUES " +
+                " (?,?,?,?,?,?,?,?,?);";
 
         int result = 0;
 
@@ -23,9 +23,12 @@ public class OrderDao {
 
              // Step 2:Create a statement using connection object
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setString(1, orderr.getIdCustomer());
+            preparedStatement.setString(1, orderr.getIdTire());
+            preparedStatement.setString(2, orderr.getIdCustomer());
+            preparedStatement.setString(2, orderr.getNameCustomer());
+            preparedStatement.setString(3, orderr.getSurCustomer());
+            preparedStatement.setString(3, orderr.getBrand2());
             preparedStatement.setString(1, orderr.getDateSend());
-            preparedStatement.setString(2, orderr.getIdTire());
             preparedStatement.setString(3, orderr.getNumTire());
             preparedStatement.setString(4, orderr.getBrand2());
             preparedStatement.setString(5, orderr.getPrice2());
