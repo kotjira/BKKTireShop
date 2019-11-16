@@ -99,15 +99,16 @@
             </tr>
             <tr>
                 <td><p>เบอร์โทรศัพท์</p><input type="number" name="phoneMe" value="<%=Tel%>" placeholder="Phone Number"></td>
-                <td><p>อีเมล์</p><input type="text" name="email" value="<%=Email%>" placeholder="E-mail"></td>
+                <td><p>อีเมล</p><input type="text" name="email" value="<%=Email%>" placeholder="E-mail"></td>
             </tr>
         </table>
+        </form>
         <table>
             <tr>
                 <td>
                     <button class="buttonConfirm" type="submit" style="vertical-align:middle"><span>Confirm </span> </button>
                 </td>
-        </form>
+
         <td>
         <a href="CustomerData_edit.jsp?id2=<%=ID%>">  <button type="submit" value="del" class="buttonDelete" style="vertical-align:middle"><span>Delete </span> </button>
         </a></td>

@@ -27,8 +27,8 @@
         resultSet = ps.executeQuery();
         while (resultSet.next()){
             OrderID.add(resultSet.getString("Order_ID"));
-            Firstname.add(resultSet.getString("Cu_Name"));
-            Lastname.add(resultSet.getString("Cu_Surname"));
+            Firstname.add(resultSet.getString("Order_Name"));
+            Lastname.add(resultSet.getString("Order_surname"));
             Date.add(resultSet.getString("Order_date"));
 
         }

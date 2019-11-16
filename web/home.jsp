@@ -6,12 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    if(session.getAttribute("login")==null || session.getAttribute("login")==" ") //check condition unauthorize user not direct access welcome.jsp page
-    {
-        response.sendRedirect("index.jsp");
-    }
-%>
+
 <html>
 <head>
     <title>Home - หน้าแรก</title>
