@@ -5,7 +5,47 @@
   Time: 9:19 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.Arrays" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    ArrayList<String> OrderID = new ArrayList<String>();
+    ArrayList<String> Firstname = new ArrayList<String>();
+    ArrayList<String> Lastname = new ArrayList<String>();
+    ArrayList<String> Date = new ArrayList<String>();
+
+    ResultSet resultSet = null;
+    try {
+        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+        String dbURL = "jdbc:mysql://167.99.76.137:3306/BKK GROUP";
+        String dbUser = "bkkgroup";
+        String dbPass = "212224236248";
+        Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
+
+        PreparedStatement ps = con.prepareStatement("select * from orders");
+        resultSet = ps.executeQuery();
+        while (resultSet.next()){
+            OrderID.add(resultSet.getString("Order_ID"));
+            Firstname.add(resultSet.getString("Cu_Name"));
+            Lastname.add(resultSet.getString("Cu_Surname"));
+            Date.add(resultSet.getString("Order_date"));
+
+        }
+    }catch (Exception e){
+        e.printStackTrace();
+    }
+    String[] orderid = new String[OrderID.size()];
+    String[] firstname = new String[Firstname.size()];
+    String[] lastname = new String[Lastname.size()];
+    String[] date = new String[Date.size()];
+
+    orderid = OrderID.toArray(orderid);
+    firstname = Firstname.toArray(firstname);
+    lastname = Lastname.toArray(lastname);
+    date = Date.toArray(date);
+
+%>
 <html>
 <head>
     <title>Order - ใบสั่งสินค้า</title>

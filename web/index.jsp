@@ -10,12 +10,7 @@
 
 <%@ page import="java.sql.*" %>
 
-<%
-  if(session.getAttribute("login")!=null) //check login session user not access or back to index.jsp page
-  {
-    response.sendRedirect("welcome.jsp");
-  }
-%>
+
 
 <%
   try
@@ -49,7 +44,7 @@
         if(email.equals(dbemail) && password.equals(dbpassword))
         {
           session.setAttribute("login",dbemail); //session name is login and store fetchable database email address
-          response.sendRedirect("datee"); //after login success redirect to date.jsp page
+          response.sendRedirect("date.jsp"); //after login success redirect to date.jsp page
         }
       }
       else
