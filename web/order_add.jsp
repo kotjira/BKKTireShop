@@ -15,10 +15,19 @@
         function CreateTextbox(){
             var i = 1;
             createTextbox.innerHTML = createTextbox.innerHTML +"<input type=text name='mytxt'+ i/>" +
-                    " <table>\n" +
+                "<table>\n" +
                 "            <tr>\n" +
                 "                <td width=\"300px\"><p>รหัสสินค้า</p><input type=\"text\" name=\"IdTire\" placeholder=\"Tire ID\"> </td>\n" +
                 "                <td width=\"300px\"><p>จำนวน (เส้น)</p><input type=\"text\" name=\"NumTire\" placeholder=\"Trie Number\"> </td>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td> <p>จำนวนราคา(ต่อเส้น)</p><SELECT name=\"price\" required><p><font size=\"3\" color=\"red\">${errorInSex}</font></p>\n" +
+                "                    <OPTION SELECTED value=\"\">price</OPTION>\n" +
+                "                    <OPTION VALUE=3000>3000</OPTION>\n" +
+                "                    <OPTION VALUE=3500>3500</OPTION>\n" +
+                "                    <OPTION VALUE=3600>3600</OPTION>\n" +
+                "                </SELECT>\n" +
+                "                </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
                 "                <td> <p>ยี่ห้อ</p><SELECT name=\"brand\" required><p><font size=\"3\" color=\"red\">${errorInSex}</font></p>\n" +
@@ -36,7 +45,8 @@
                 "                </SELECT>\n" +
                 "                </td>\n" +
                 "            </tr>\n" +
-                "        </table>"
+                "        </table>\n" +
+                "        <br>"
         }
     </script>
 </head>
@@ -119,6 +129,15 @@
             <tr>
                 <td width="300px"><p>รหัสสินค้า</p><input type="text" name="IdTire" placeholder="Tire ID"> </td>
                 <td width="300px"><p>จำนวน (เส้น)</p><input type="text" name="NumTire" placeholder="Trie Number"> </td>
+            </tr>
+            <tr>
+                <td> <p>จำนวนราคา(ต่อเส้น)</p><SELECT name="price" required><p><font size="3" color="red">${errorInSex}</font></p>
+                    <OPTION SELECTED value="">price</OPTION>
+                    <OPTION VALUE=3000>3000</OPTION>
+                    <OPTION VALUE=3500>3500</OPTION>
+                    <OPTION VALUE=3600>3600</OPTION>
+                </SELECT>
+                </td>
             </tr>
             <tr>
                 <td> <p>ยี่ห้อ</p><SELECT name="brand" required><p><font size="3" color="red">${errorInSex}</font></p>
