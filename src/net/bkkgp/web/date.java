@@ -44,6 +44,7 @@ public class date extends HttpServlet {
             ArrayList<String> Year = new ArrayList<String>();
             while (rs.next()) {
                 String Date = rs.getString("Order_date").toString();
+                System.out.println("date "+Date);
                 String d = "";
                 String m = "";
                 String y = "";

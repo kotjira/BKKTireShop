@@ -51,6 +51,7 @@
     </script>
 </head>
 <body>
+<form>
 <div class="pageBox">
     <div class="pageH1"><left><h1>เพิ่มใบสั่งสินค้า</h1></left></div>
 
@@ -140,7 +141,7 @@
                 </td>
             </tr>
             <tr>
-                <td> <p>ยี่ห้อ</p><SELECT name="brand" required><p><font size="3" color="red">${errorInSex}</font></p>
+                <td> <p>ยี่ห้อ</p><SELECT name="brand2" required><p><font size="3" color="red">${errorInSex}</font></p>
                     <OPTION SELECTED value="">Brand</OPTION>
                     <OPTION VALUE=misi>misi</OPTION>
                     <OPTION VALUE=koji>koji</OPTION>
@@ -178,5 +179,6 @@
 
 </div>
 
+</form>
 </body>
 </html>
