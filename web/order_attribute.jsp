@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css_order.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script language="JavaScript">
-        window.print();
+        window.print(){
         parent.framename.print();
         document.frames('iFrameName').print();
         window.self.print();
-        print();
+        print();}
     </script>
 </head>
 <body>
