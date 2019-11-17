@@ -13,10 +13,10 @@
 <%@ page import="java.util.Set" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String ides = request.getAttribute("ides").toString();
-    String prices = request.getAttribute("prices").toString();
-    String brands = request.getAttribute("brands").toString();
-    String generations = request.getAttribute("generations").toString();
+    String ides = request.getParameter("ides");
+    String prices = request.getParameter("prices");
+    String brands = request.getParameter("brands");
+    String generations = request.getParameter("generations");
     ArrayList<String> CustomerID = new ArrayList<String>();
     ArrayList<String> Name = new ArrayList<String>();
     ArrayList<String> LastName = new ArrayList<String>();
