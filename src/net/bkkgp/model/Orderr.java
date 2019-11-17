@@ -12,6 +12,8 @@ public class Orderr implements Serializable {
      */
     private static final long serialVersionUID = 1L;
     private String idCustomer;
+    private String namecustomer;
+    private String surcustomer;
     private String dateSend;
     private String idTire;
     private String numTire;
@@ -26,6 +28,22 @@ public class Orderr implements Serializable {
     public void setIdCustomer(String idCustomer) {
 
         this.idCustomer = idCustomer;
+    }
+    public String getNameCustomer() {
+
+        return namecustomer;
+    }
+    public void setNameCustomer(String namecustomer) {
+
+        this.namecustomer = namecustomer;
+    }
+    public String getSurCustomer() {
+
+        return surcustomer;
+    }
+    public void setSurCustomer(String surcustomer) {
+
+        this.surcustomer = surcustomer;
     }
     public String getDateSend() {
 

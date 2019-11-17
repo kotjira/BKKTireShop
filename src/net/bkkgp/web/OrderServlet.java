@@ -29,6 +29,8 @@ public class OrderServlet extends HttpServlet {
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         String idCustomer = request.getParameter("idCustomer");
+        String namecustomer = request.getParameter("namecustomer");
+        String surcustomer = request.getParameter("surcustomer");
         String dateSend = request.getParameter("dateSend");
         String idTire = request.getParameter("idTire");
         String numTire = request.getParameter("numTire");
@@ -39,6 +41,8 @@ public class OrderServlet extends HttpServlet {
 
         Orderr orderr = new Orderr();
         orderr.setIdCustomer(idCustomer);
+        orderr.setNameCustomer(namecustomer);
+        orderr.setSurCustomer(surcustomer);
         orderr.setDateSend(dateSend);
         orderr.setIdTire(idTire);
         orderr.setNumTire(numTire);

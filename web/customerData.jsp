@@ -45,10 +45,10 @@
       e.printStackTrace();
   }
     String[] id = new String[Id.size()];
-    String[] firstname = new String[Id.size()];
-    String[] lastname = new String[Id.size()];
-    String[] gender = new String[Id.size()];
-    String[] nationality = new String[Id.size()];
+    String[] firstname = new String[Firstname.size()];
+    String[] lastname = new String[Lastname.size()];
+    String[] gender = new String[Gender.size()];
+    String[] nationality = new String[Nationality.size()];
     String[] address = new String[Address.size()];
     String[] postid = new String[PostId.size()];
     String[] tel = new String[Tel.size()];

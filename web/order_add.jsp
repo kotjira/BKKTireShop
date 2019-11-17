@@ -84,7 +84,7 @@
                 <td width="300px"><p>จำนวน (เส้น)</p><input type="text" name="NumTire" placeholder="Trie Number"> </td>
             </tr>
             <tr>
-                <td> <p>จำนวนราคา(ต่อเส้น)</p><SELECT name="price" required><p><font size="3" color="red">${errorInSex}</font></p>
+                <td> <p>จำนวนราคา(ต่อเส้น)</p><SELECT name="price2" required><p><font size="3" color="red">${errorInSex}</font></p>
                     <OPTION SELECTED value="">price</OPTION>
                     <OPTION VALUE=3000>3000</OPTION>
                     <OPTION VALUE=3500>3500</OPTION>
