@@ -109,7 +109,8 @@
                     <button class="buttonConfirm" type="submit" style="vertical-align:middle" form="form1"><span>Confirm </span> </button>
                 </td>
         <td>
-        <a href="CustomerData_edit.jsp?id2=<%=ID%>">  <button type="submit" value="del" class="buttonDelete" style="vertical-align:middle"><span>Delete </span> </button>
+        <a href="CustomerData_edit.jsp?id2=<%=ID%>">
+            <button type="submit" value="del" class="buttonDelete" style="vertical-align:middle"><span>Delete </span> </button>
         </a></td>
         <td>
             <a href="customerData.jsp"><button class="buttonCancel" style="vertical-align:middle"><span>Cancel </span> </button></a>

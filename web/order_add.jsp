@@ -69,6 +69,40 @@
     generation = Generation.toArray(generation);
 
 %>
+<%
+    try
+    {
+        Class.forName("com.mysql.jdbc.Driver"); //load driver
+
+        Connection con=DriverManager.getConnection("jdbc:mysql://167.99.76.137:3306/BKK GROUP","bkkgroup","212224236248"); //create connection
+
+        if(request.getParameter("sub")!=null) //check login button click event not null
+        {
+
+            String cusid = request.getParameter("id2");
+            String cusid = request.getParameter("id2");
+            String cusid = request.getParameter("id2");
+            String cusid = request.getParameter("id2");
+            // PreparedStatement pstmt=null; //create statement
+
+            //pstmt=con.prepareStatement("delete from customer where Customer_ID = ?"); //sql select query
+            // pstmt.setString(1,ID);
+
+            //ResultSet rs=pstmt.executeQuery(); //execute query and store in resultset object rs.
+            Statement s = null;
+            s = con.createStatement();
+            String sql = "delete from customer where Customer_ID = '"+cusid+"'";
+            s.execute(sql);
+            response.sendRedirect("customerData.jsp"); //after login success redirect to date.jsp page
+            con.close(); //close connection
+        }
+
+    }
+    catch(Exception e)
+    {
+        System.out.println(e);
+    }
+%>
 <html>
 <head>
     <title>เพิ่มใบสั่งสินค้า</title>
@@ -118,7 +152,7 @@
 
 </head>
 <body>
-<form>
+<form action="<%= request.getContextPath() %>/order_add.jsp" method="post">
 <div class="pageBox">
     <div class="pageH1"><left><h1>เพิ่มใบสั่งสินค้า</h1></left></div>
 
@@ -256,16 +290,11 @@
             </tr>
         </table>
         <br>
-        <form name="form" action="post" method="">
-            <div id="createTextbox"></div>
-            <i onclick="CreateTextbox();" class="fa fa-plus-circle" aria-hidden="true"></i>
-        </form>
-
         <br>
         <table>
             <tr>
                 <td>
-                    <button class="buttonConfirm" style="vertical-align:middle" type="submit"><span>Confirm </span> </button>
+                    <button class="buttonConfirm" style="vertical-align:middle" type="submit" name="sub"><span>Confirm </span> </button>
                 </td>
                 <td>
                     <a href="order.jsp"><button class="buttonCancel" style="vertical-align:middle" type="button"><span>Cancel </span> </button></a>
