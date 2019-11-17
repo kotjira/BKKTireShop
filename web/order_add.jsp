@@ -250,7 +250,7 @@
                 <td> <p>ยี่ห้อ</p><SELECT name="brand2" required><p><font size="3" color="red">${errorInSex}</font></p>
                     <OPTION SELECTED disabled ="">Brand</OPTION>
                     <OPTION VALUE=misi>misi</OPTION>
-                    <OPTION VALUE=koji>koji</OPTION>
+                    <OPTION VALUE=koji>ko</OPTION>
                     <OPTION VALUE=adidas>adidas</OPTION>
                 </SELECT>
                 </td>
@@ -272,7 +272,6 @@
         <br>
         <table>
             <tr>
-
                 <td>
                     <button class="buttonConfirm" style="vertical-align:middle" type="submit"><span>Confirm </span> </button>
                 </td>
@@ -282,7 +281,6 @@
             </tr>
         </table>
     </div>
-
 </div>
 </form>
 </body>
