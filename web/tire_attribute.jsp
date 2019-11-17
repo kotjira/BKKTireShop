@@ -20,7 +20,7 @@
                 <a href="tire.jsp"><button class="buttonBack" style="vertical-align:middle"><span>BACK </span> </button></a>
             </tr>
             <tr>
-                <a href="tire.jsp"><button class="buttonAddOrder" style="vertical-align:middle"><span>Add Order</span> </button></a>
+                <a href="order_add.jsp"><button class="buttonAddOrder" style="vertical-align:middle"><span>Add Order</span> </button></a>
             </tr>
         </table>
     </div>

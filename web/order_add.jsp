@@ -74,54 +74,6 @@
                 </SELECT>
                 </td>
             </tr>
-            <tr>
-                <td> <p>เพศ</p><SELECT name="sex1" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Gender</OPTION>
-                    <OPTION VALUE=Male>male</OPTION>
-                    <OPTION VALUE=Female>female</OPTION>
-                    <OPTION VALUE=Other>other</OPTION>
-                </SELECT>
-                </td>
-                <td> <p>สัญชาติ</p><SELECT name="nationality" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Nationality</OPTION>
-                    <OPTION VALUE=Thai>Thai</OPTION>
-                    <OPTION VALUE=American>American</OPTION>
-                    <OPTION VALUE=England>England</OPTION>
-                </SELECT>
-                </td>
-            </tr>
-            <tr>
-                <td> <p>ที่อยู่</p><SELECT name="address" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Address</OPTION>
-                    <OPTION VALUE=Pranburi>Pranburi</OPTION>
-                    <OPTION VALUE=Huahin>Huahin</OPTION>
-                    <OPTION VALUE=Bangkok>Bangkok</OPTION>
-                </SELECT>
-                </td>
-                <td> <p>รหัสไปรษณีย์</p><SELECT name="postcode" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">postcode</OPTION>
-                    <OPTION VALUE=77120>77120</OPTION>
-                    <OPTION VALUE=55201>55201</OPTION>
-                    <OPTION VALUE=99541>99541</OPTION>
-                </SELECT>
-                </td>
-            </tr>
-            <tr>
-                <td> <p>เบอร์โทรศัพท์</p><SELECT name="TelMe" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Tel</OPTION>
-                    <OPTION VALUE=0971326965>0971326965</OPTION>
-                    <OPTION VALUE=0956052119>0956052119</OPTION>
-                    <OPTION VALUE=0853706885>0853706885</OPTION>
-                </SELECT>
-                </td>
-                <td> <p>Email</p><SELECT name="Email" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Email</OPTION>
-                    <OPTION VALUE=kraiwit>Kraiwitroopchom@gmail.com</OPTION>
-                    <OPTION VALUE=bussakon>Busakonsupakitaumnouy@gmail.com</OPTION>
-                    <OPTION VALUE=kingpatcha>Kingpatcha@gmail.com</OPTION>
-                </SELECT>
-                </td>
-            </tr>
         </table>
         <br>
         <br>
@@ -163,6 +115,7 @@
             <i onclick="CreateTextbox();" class="fa fa-plus-circle" aria-hidden="true"></i>
         </form>
 
+        <br>
         <br>
         <table>
             <tr>
