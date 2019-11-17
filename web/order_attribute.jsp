@@ -47,9 +47,6 @@
         <br>
         <table>
             <tr>
-                <th align="left" width="150px"><p>ราคารวม</p></th> <td width="150px"><p>3000</p> <th><p>บาท</p></th>
-            </tr>
-            <tr>
                 <th align="left" width="150px"><p>ราคารวม VAT 7%</p></th> <td  bgcolor="#ffe4e1"  width="150px"><p>3700</p> <th><p>บาท</p></th>
             </tr>
         </table>

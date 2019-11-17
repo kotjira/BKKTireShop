@@ -78,23 +78,62 @@
 
         if(request.getParameter("sub")!=null) //check login button click event not null
         {
+            String productid2 = request.getParameter("ProductID");
+            String customerid2 = request.getParameter("IdCustomer");
+            String ordername = request.getParameter("nameCustomer");
+            String ordersurname = request.getParameter("lastName");
+            String orderbrand = request.getParameter("Brand");
+            String Quantity = request.getParameter("NumTire");
+            String price2 = request.getParameter("Price");
 
-            String cusid = request.getParameter("id2");
-            String cusid = request.getParameter("id2");
-            String cusid = request.getParameter("id2");
-            String cusid = request.getParameter("id2");
-            // PreparedStatement pstmt=null; //create statement
+            int Quantityint = Integer.parseInt(Quantity);
+            int priceint = Integer.parseInt(price2);
+            double totalamount = (priceint*Quantityint*0.07)+(priceint*Quantityint);
+            String orderdateday = request.getParameter("Day");
+            String orderdatemonth= request.getParameter("Month");
+            String orderdateyear = request.getParameter("Year");
+            System.out.println(productid2);
 
-            //pstmt=con.prepareStatement("delete from customer where Customer_ID = ?"); //sql select query
-            // pstmt.setString(1,ID);
-
-            //ResultSet rs=pstmt.executeQuery(); //execute query and store in resultset object rs.
-            Statement s = null;
-            s = con.createStatement();
-            String sql = "delete from customer where Customer_ID = '"+cusid+"'";
-            s.execute(sql);
-            response.sendRedirect("customerData.jsp"); //after login success redirect to date.jsp page
-            con.close(); //close connection
+            try {
+                DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+                String dbURL = "jdbc:mysql://167.99.76.137:3306/BKK GROUP";
+                String dbUser = "bkkgroup";
+                String dbPass = "212224236248";
+                Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
+                Connection conn2 = DriverManager.getConnection(dbURL, dbUser, dbPass);
+                String INSERT_USERS_SQL = "INSERT INTO orders" +
+                        "  (Product_ID,Customer_ID,Order_name,Order_surname,Order_brand,Quantity,Price,Total_amount,Order_date) VALUES " +
+                        " (?,?,?,?,?,?,?,?,?);";
+                String INSERT_USERS_SQL2 = "SELECT * from customer where Customer_ID = ?";
+                PreparedStatement ps1 = conn2.prepareStatement(INSERT_USERS_SQL2);
+                PreparedStatement ps = conn.prepareStatement(INSERT_USERS_SQL);
+                ps1.setString(1,ordername);
+                ResultSet results;String lastname2 = null;String firstname2 = null;
+                results = ps1.executeQuery();
+                if (results.next()) {
+                    lastname2 = results.getString("Cu_Surname");
+                    firstname2 = results.getString("Cu_Name");
+                }
+                ps.setString(1,productid2);
+                ps.setString(2,customerid2);
+                ps.setString(3,firstname2);
+                ps.setString(4,lastname2);
+                ps.setString(5,orderbrand);
+                ps.setInt(6,Quantityint);
+                ps.setInt(7,priceint);
+                ps.setDouble(8,totalamount);
+                ps.setString(9,orderdateyear+"-"+orderdatemonth+"-"+orderdateday);
+                int Rs = 0;
+                Rs = ps.executeUpdate();
+                RequestDispatcher dispatch = null ;
+                ServletContext context = request.getServletContext();
+                dispatch = context.getRequestDispatcher("/order_attribute.jsp");
+                dispatch.forward(request, response);
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
         }
 
     }
@@ -262,6 +301,7 @@
                         <%
                             for(int i=0 ; i<name.length ; i++){
                                 response.setContentType("text/html");
+
                                 out.print("<OPTION VALUE="+customerid[i]+">"+name[i]+"&nbsp; &nbsp;"+lastname[i]+"</OPTION>");
                             }
                         %>
