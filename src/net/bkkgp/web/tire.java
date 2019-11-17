@@ -54,7 +54,13 @@ public class tire extends HttpServlet {
                 out.print("<a href=\"tire_generation"+rs.getString("Wheel_diameter")+".jsp\"><button class=\"buttonBack\" style=\"vertical-align:middle\"><span>BACK </span> </button></a>");
                 out.print("</tr>");
                 out.print("<tr>");
-                out.print("<a href=\"tire.jsp\"><button class=\"buttonAddOrder\" style=\"vertical-align:middle\"><span>Add Order</span> </button></a>");
+                out.print("<form action=\"order_add.jsp\" method=\"post\" id=\"form1\">");
+                out.print("<input type=\"hidden\" name=\"ides\" value=\""+rs.getString("Product_ID")+"\">");
+                out.print("<input type=\"hidden\" name=\"prices\" value=\""+rs.getString("Price")+"\">");
+                out.print("<input type=\"hidden\" name=\"brands\" value=\""+rs.getString("Brand")+"\">");
+                out.print("<input type=\"hidden\" name=\"generations\" value=\""+rs.getString("Generation")+"\">");
+                out.print("</form>");
+                out.print("<a href=\"tire.jsp\"><button class=\"buttonAddOrder\" form=\"form1\" style=\"vertical-align:middle\"><span>Add Order</span> </button></a>");
                 out.print("</tr>");
                 out.print("</table>");
                 out.print("</div>");
