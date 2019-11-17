@@ -5,7 +5,6 @@
   Time: 8:27 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.Arrays" %>
 <%@ page import="java.util.ArrayList" %>
@@ -101,18 +100,31 @@
                 String dbPass = "212224236248";
                 Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
                 Connection conn2 = DriverManager.getConnection(dbURL, dbUser, dbPass);
+                Connection conn3 = DriverManager.getConnection(dbURL, dbUser, dbPass);
                 String INSERT_USERS_SQL = "INSERT INTO orders" +
                         "  (Product_ID,Customer_ID,Order_name,Order_surname,Order_brand,Quantity,Price,Total_amount,Order_date) VALUES " +
                         " (?,?,?,?,?,?,?,?,?);";
                 String INSERT_USERS_SQL2 = "SELECT * from customer where Customer_ID = ?";
+                String INSERT_USERS_SQL3 = "SELECT * from orders where Customer_ID = ?";
                 PreparedStatement ps1 = conn2.prepareStatement(INSERT_USERS_SQL2);
                 PreparedStatement ps = conn.prepareStatement(INSERT_USERS_SQL);
+                PreparedStatement ps2 = conn3.prepareStatement(INSERT_USERS_SQL3);
                 ps1.setString(1,ordername);
-                ResultSet results;String lastname2 = null;String firstname2 = null;
+                ps2.setString(1,ordername);
+                ResultSet results;String lastname2 = null;String firstname2 = null;ResultSet results2;
+                String address2 = null; String postid = null; String orderid = null;
                 results = ps1.executeQuery();
+                results2 = ps2.executeQuery();
                 if (results.next()) {
                     lastname2 = results.getString("Cu_Surname");
                     firstname2 = results.getString("Cu_Name");
+                    address2 = results.getString("Cu_Address");
+                    postid = results.getString("Cu_PostId");
+                }
+
+                if (results2.next()) {
+
+                    orderid = results2.getString("Order_ID");
                 }
                 ps.setString(1,productid2);
                 ps.setString(2,customerid2);
@@ -127,6 +139,26 @@
                 Rs = ps.executeUpdate();
                 RequestDispatcher dispatch = null ;
                 ServletContext context = request.getServletContext();
+                session.setAttribute("idcustom",customerid2);
+                session.setAttribute("fname",firstname2);
+                session.setAttribute("lname",lastname2);
+                session.setAttribute("address",address2);
+                session.setAttribute("idpost",postid);
+                session.setAttribute("day",orderdateday);
+                session.setAttribute("month",orderdatemonth);
+                session.setAttribute("year",orderdateyear);
+                session.setAttribute("idorder",orderid);
+                session.setAttribute("idproduct",productid2);
+                session.setAttribute("brand",orderbrand);
+                session.setAttribute("quantity",Quantityint);
+                session.setAttribute("price",priceint);
+                session.setAttribute("total",totalamount);
+                String gen = request.getParameter("gen");
+                session.setAttribute("gen2",gen);
+                con.close();
+                conn.close();
+                conn2.close();
+                conn3.close();
                 dispatch = context.getRequestDispatcher("/order_attribute.jsp");
                 dispatch.forward(request, response);
             }
@@ -322,10 +354,10 @@
             </tr>
             <tr>
                 <td> <p>ยี่ห้อ</p>
-                    <input type="text" id="myText" name="Brand" value="<%=brands%>"placeholder="Brand" readonly>
+                    <input type="text" id="myText" name="Brand" value="<%=brands%>" placeholder="Brand" readonly>
                 </td>
                 <td> <p>รุ่น</p>
-                    <input type="text" id="myText" name="Generation" value="<%=generations%>"placeholder="Generation" readonly>
+                    <input type="text" id="myText" name="gen" value="<%=generations%>" placeholder="Generation" readonly>
                 </td>
             </tr>
         </table>

@@ -24,7 +24,9 @@
         Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
         PreparedStatement ps = con.prepareStatement("select * from orders");
+
         resultSet = ps.executeQuery();
+
         while (resultSet.next()){
             OrderID.add(resultSet.getString("Order_ID"));
             Firstname.add(resultSet.getString("Order_Name"));
@@ -61,19 +63,19 @@
     <div class="pageOrder" style="overflow-y:scroll;height:420px">
         <table bgcolor="#fff0f5" border="1" cellspacing="0" align="center">
             <tr bgcolor="#f08080">
-                <th width="200px">รหัสใบสั่งสินค้า</th><th width="150px">ชื่อ</th><th width="150px">นามสกุล</th><th width="150px">วันที่สั่ง</th> <th width="150px" align="center">รายละเอียด</th>
+                <th width="150px">รหัสใบสั่งสินค้า</th><th width="150px">ชื่อ</th><th width="150px">นามสกุล</th><th width="150px">วันที่สั่ง</th> <th width="150px" align="center">รายละเอียด</th>
             </tr>
             <%
                 for(int i=0 ; i<orderid.length ; i++){
                     response.setContentType("text/html");
                     out.print("<tr>");
-                    out.print(" <td> "+orderid[i]+" </td> <td> "+firstname[i]+"</td> <td> "+lastname[i]+"</td> <td> "+date[i]+ "</td> <td align=\"center\"><a href=\"order_attribute.jsp\"><i class=\"fa fa-book\" aria-hidden=\"true\"></i></a> </td>");
+                    out.print(" <td align=\"center\"> "+orderid[i]+" </td> <td align=\"center\"> "+firstname[i]+"</td> <td align=\"center\"> "+lastname[i]+"</td> <td align=\"center\"> "+date[i]+ "</td> <td align=\"center\"><form action=\"getorderdata\" method=\"get\"><input type=\"hidden\" name=\"id\" value=\""+orderid[i]+"\"><input type=\"hidden\" name=\"firstname\" value=\""+firstname[i]+"\"><input type=\"hidden\" name=\"lastname\" value=\""+lastname[i]+"\"><button class=\"fa fa-book\" aria-hidden=\"true\" style=\"background-color:#f5f5dc;border-width:0px;\" type=\"submit\"> </button> </td></form></td>");
                     out.print("</tr>");
                 }
             %>
 
             <tr>
-                <td></td><td></td><td></td><td></td><td align="center"><a href="order_add.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
+                <td></td><td></td><td></td><td></td><td align="center"><a href="tire.jsp"> <i class="fa fa-plus-circle" aria-hidden="true"></i></a></td>
             </tr>
             <tr>
 
