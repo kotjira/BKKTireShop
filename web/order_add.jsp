@@ -15,6 +15,7 @@
 <%
     ArrayList<String> CustomerID = new ArrayList<String>();
     ArrayList<String> Name = new ArrayList<String>();
+    ArrayList<String> LastName = new ArrayList<String>();
     ArrayList<String> ProductID = new ArrayList<String>();
     ArrayList<String> Price = new ArrayList<String>();
     ArrayList<String> Brand = new ArrayList<String>();
@@ -34,6 +35,7 @@
         while (resultSet.next()){
             CustomerID.add(resultSet.getString("Customer_ID"));
             Name.add(resultSet.getString("Cu_Name"));
+            LastName.add(resultSet.getString("Cu_Surname"));
 
         }
         while (resultSet2.next()){
@@ -48,6 +50,7 @@
     }
     String[] customerid = new String[CustomerID.size()];
     String[] name = new String[Name.size()];
+    String[] lastname = new String[Name.size()];
     String[] productid = new String[ProductID.size()];
     String[] price = new String[Price.size()];
     String[] brand = new String[Brand.size()];
@@ -55,6 +58,7 @@
 
     customerid = CustomerID.toArray(customerid);
     name = Name.toArray(name);
+    lastname = LastName.toArray(lastname);
     productid = ProductID.toArray(productid);
     price = Price.toArray(price);
     brand = Brand.toArray(brand);
@@ -215,12 +219,12 @@
             </tr>
             <tr>
                 <td> <p>ชื่อลูกค้า</p>
-                    <SELECT name="nameCustomer" required onchange="myFunction(event)"><p><font size="3" color="red">${errorInSex}</font></p>
+                    <SELECT name="nameCustomer" required onchange="myFunction(event)" style="width: 200px; height:25px;"><p><font size="3" color="red">${errorInSex}</font></p>
                     <OPTION SELECTED disabled ="">Name</OPTION>
                         <%
                             for(int i=0 ; i<name.length ; i++){
                                 response.setContentType("text/html");
-                                out.print("<OPTION VALUE="+customerid[i]+">"+name[i]+"</OPTION>");
+                                out.print("<OPTION VALUE="+customerid[i]+">"+name[i]+"&nbsp; &nbsp;"+lastname[i]+"</OPTION>");
                             }
                         %>
                 </SELECT>
@@ -230,36 +234,20 @@
         <table>
             <tr>
                 <td width="300px"><p>รหัสสินค้า</p>
-                    <SELECT name="nameCustomer" required ><p><font size="3" color="red">${errorInSex}</font></p>
-                        <OPTION SELECTED disabled ="">Product ID</OPTION>
-                        <%
-                            for(int i=0 ; i<productid.length ; i++){
-                                response.setContentType("text/html");
-                                out.print("<OPTION VALUE="+productid[i]+">"+productid[i]+"</OPTION>");
-                            }
-                        %>
-                    </SELECT>
+                    <input type="text" id="myText" name="ProductID" placeholder="ProductID" readonly>
                 </td>
                 <td width="300px"><p>จำนวน (เส้น)</p><input type="text" name="NumTire" placeholder="Trie Number"> </td>
             </tr>
             <tr>
-                <td> <p>ราคา(ต่อเส้น)</p><input type="text" id="myText" name="IdCustomer" placeholder="Customer ID" readonly>
+                <td> <p>ราคา(ต่อเส้น)</p><input type="text" id="myText" name="Price" placeholder="Price" readonly>
                 </td>
             </tr>
             <tr>
-                <td> <p>ยี่ห้อ</p><SELECT name="brand2" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED disabled ="">Brand</OPTION>
-                    <OPTION VALUE=misi>misi</OPTION>
-                    <OPTION VALUE=koji>koji</OPTION>
-                    <OPTION VALUE=adidas>adidas</OPTION>
-                </SELECT>
+                <td> <p>ยี่ห้อ</p>
+                    <input type="text" id="myText" name="Brand" placeholder="Brand" readonly>
                 </td>
-                <td> <p>รุ่น</p><SELECT name="generation" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Generation</OPTION>
-                    <OPTION VALUE=ma11>ma11</OPTION>
-                    <OPTION VALUE=kk55>kk55</OPTION>
-                    <OPTION VALUE=kk577>kk577</OPTION>
-                </SELECT>
+                <td> <p>รุ่น</p>
+                    <input type="text" id="myText" name="Generation" placeholder="Generation" readonly>
                 </td>
             </tr>
         </table>
