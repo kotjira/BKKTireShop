@@ -58,11 +58,11 @@
 </head>
 <body>
 <div class="pageBox">
-    <div class="pageH1"><left><h1>เแก้ไขข้อมูลลูกค้า</h1></left></div>
+    <div class="pageH1"><left><h1>แก้ไขข้อมูลลูกค้า</h1></left></div>
 
 
     <div class="pageAdd" style="overflow-y:hidden;height:420px" align="center">
-        <form action="${pageContext.request.contextPath}/UpdateCustomerData" method="post">
+        <form action="${pageContext.request.contextPath}/UpdateCustomerData" method="post" id="form1">
             <input type="hidden" name="ides" value="<%=ID%>">
         <table>
             <tr>
@@ -106,9 +106,8 @@
         <table>
             <tr>
                 <td>
-                    <button class="buttonConfirm" type="submit" style="vertical-align:middle"><span>Confirm </span> </button>
+                    <button class="buttonConfirm" type="submit" style="vertical-align:middle" form="form1"><span>Confirm </span> </button>
                 </td>
-
         <td>
         <a href="CustomerData_edit.jsp?id2=<%=ID%>">  <button type="submit" value="del" class="buttonDelete" style="vertical-align:middle"><span>Delete </span> </button>
         </a></td>

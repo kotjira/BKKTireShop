@@ -1,5 +1,8 @@
 <%@ page import="java.sql.*" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.HashSet" %>
+<%@ page import="java.util.Set" %>
+<%@ page import="java.util.Arrays" %><%--
   Created by IntelliJ IDEA.
   User: Kraiwit
   Date: 25-Oct-19
@@ -9,9 +12,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    ArrayList<String> Day = new ArrayList<String>();
-    ArrayList<String> Month = new ArrayList<String>();
-    ArrayList<String> Year = new ArrayList<String>();
+    Set<String> Day = new HashSet<String>();
+    Set<String> Month = new HashSet<String>();
+    Set<String> Year = new HashSet<String>();
     try
     {
         Class.forName("com.mysql.jdbc.Driver"); //load driver
@@ -24,17 +27,15 @@
         while (rs.next()) {
             String Date = rs.getString("Order_date").toString();
             String DateDash = Date + "-";
-            System.out.println("date "+DateDash);
             String d = "";
             String m = "";
             String y = "";
             int dash = 1;
             int leng = DateDash.length();
-            System.out.println("leng "+leng);
+
             for (int a = 0; a < leng; a++) {
                 char s = DateDash.charAt(a);
-                System.out.println("s -  "+s);
-                System.out.println("dash -  "+dash);
+
                 if (s != '-') {
 
                     if (dash == 1) {
@@ -47,24 +48,23 @@
                         d = d + s;
                     }
                 } else if (dash == 1) {
-                        System.out.println("Year " + y);
                         dash = dash + 1;
                         Year.add(y);
                     }
                     else if (dash == 2) {
-                        System.out.println("Month " + m);
                         dash = dash + 1;
                         Month.add(m);
                     }
                     else if(dash == 3){
-                        System.out.println("Day " + d);
                         dash = dash + 1;
                         Day.add(d);
                     }
                 }
+
+
             }
         con.close(); //close connection
-        }catch(Exception e)
+    }catch(Exception e)
     {
         System.out.println(e);
     }
@@ -95,7 +95,7 @@
                 <div class="pageDate" align="center">
                     <h3>วันเเดือนปีที่ทำการแก้ไข บันทึก ข้อมูล</h3>
                     <select name="Day">
-                        <option value="">- Day -</option>
+                        <option selected disabled value="">- Day -</option>
                     <%
                         for (int b = 0;b < day.length;b++){
                             out.print("<option value=\""+day[b]+"\">"+day[b]+"</option>");
@@ -103,35 +103,38 @@
                     %>
                     </select>
                     <select name="Month">
-                    <option value="">- Month -</option>
+                    <option selected disabled value="">- Month -</option>
                     <%
-                        String monthtxt = "";
+
                         for (int h = 0;h < month.length;h++){
-                            if(month[h].equals("1")){
+                            String monthtxt = "";
+
+
+                            if(month[h].equals("01")){
                                 monthtxt = "January";
                             }
-                            if(month[h].equals("2")){
+                            if(month[h].equals("02")){
                                 monthtxt = "February";
                             }
-                            if(month[h].equals("3")){
+                            if(month[h].equals("03")){
                                 monthtxt = "March";
                             }
-                            if(month[h].equals("4")){
+                            if(month[h].equals("04")){
                                 monthtxt = "April";
                             }
-                            if(month[h].equals("5")){
+                            if(month[h].equals("05")){
                                 monthtxt = "May";
                             }
-                            if(month[h].equals("6")){
+                            if(month[h].equals("06")){
                                 monthtxt = "June";
                             }
-                            if(month[h].equals("7")){
+                            if(month[h].equals("07")){
                                 monthtxt = "July";
                             }
-                            if(month[h].equals("8")){
+                            if(month[h].equals("08")){
                                 monthtxt = "August";
                             }
-                            if(month[h].equals("9")){
+                            if(month[h].equals("09")){
                                 monthtxt = "September";
                             }
                             if(month[h].equals("10")){
@@ -148,11 +151,12 @@
                     %>
                 </select>
                     <select name="Year">
-                    <option value="">- Year -</option>
+                    <option selected disabled value="">- Year -</option>
                         <%
                             for (int p = 0;p < year.length;p++){
                                 out.print("<option value=\""+year[p]+"\">"+year[p]+"</option>");
                             }
+
 
 
 

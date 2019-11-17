@@ -6,6 +6,61 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.Arrays" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.HashSet" %>
+<%@ page import="java.util.Set" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    ArrayList<String> CustomerID = new ArrayList<String>();
+    ArrayList<String> Name = new ArrayList<String>();
+    ArrayList<String> ProductID = new ArrayList<String>();
+    ArrayList<String> Price = new ArrayList<String>();
+    ArrayList<String> Brand = new ArrayList<String>();
+    ArrayList<String> Generation = new ArrayList<String>();
+    ResultSet resultSet = null;
+    try {
+        DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+        String dbURL = "jdbc:mysql://167.99.76.137:3306/BKK GROUP";
+        String dbUser = "bkkgroup";
+        String dbPass = "212224236248";
+        Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
+
+        PreparedStatement ps = con.prepareStatement("select * from customer");
+        PreparedStatement ps2 = con.prepareStatement("select * from tire");
+        resultSet = ps.executeQuery();
+        ResultSet resultSet2 = ps2.executeQuery();
+        while (resultSet.next()){
+            CustomerID.add(resultSet.getString("Customer_ID"));
+            Name.add(resultSet.getString("Cu_Name"));
+
+        }
+        while (resultSet2.next()){
+            ProductID.add(resultSet2.getString("Product_ID"));
+            Price.add(resultSet2.getString("Price"));
+            Brand.add(resultSet2.getString("Brand"));
+            Generation.add(resultSet2.getString("Generation"));
+        }
+
+    }catch (Exception e){
+        e.printStackTrace();
+    }
+    String[] customerid = new String[CustomerID.size()];
+    String[] name = new String[Name.size()];
+    String[] productid = new String[ProductID.size()];
+    String[] price = new String[Price.size()];
+    String[] brand = new String[Brand.size()];
+    String[] generation = new String[Generation.size()];
+
+    customerid = CustomerID.toArray(customerid);
+    name = Name.toArray(name);
+    productid = ProductID.toArray(productid);
+    price = Price.toArray(price);
+    brand = Brand.toArray(brand);
+    generation = Generation.toArray(generation);
+
+%>
 <html>
 <head>
     <title>เพิ่มใบสั่งสินค้า</title>
@@ -21,7 +76,7 @@
                 "                <td width=\"300px\"><p>จำนวน (เส้น)</p><input type=\"text\" name=\"NumTire\" placeholder=\"Trie Number\"> </td>\n" +
                 "            </tr>\n" +
                 "            <tr>\n" +
-                "                <td> <p>จำนวนราคา(ต่อเส้น)</p><SELECT name=\"price\" required><p><font size=\"3\" color=\"red\">${errorInSex}</font></p>\n" +
+                "                <td> <p>ราคา(ต่อเส้น)</p><SELECT name=\"price\" required><p><font size=\"3\" color=\"red\">${errorInSex}</font></p>\n" +
                 "                    <OPTION SELECTED value=\"\">price</OPTION>\n" +
                 "                    <OPTION VALUE=3000>3000</OPTION>\n" +
                 "                    <OPTION VALUE=3500>3500</OPTION>\n" +
@@ -48,7 +103,11 @@
                 "        </table>\n" +
                 "        <br>"
         }
+        function myFunction(e) {
+            document.getElementById("myText").value = e.target.value
+        }
     </script>
+
 </head>
 <body>
 <form>
@@ -58,91 +117,138 @@
     <div class="pageOrderAdd" style="overflow-y:scroll;height:420px" align="center">
         <table>
             <tr>
-                <td width="300px"><p>รหัสลูกค้า</p><input type="text" name="IdCustomer" placeholder="Customer ID"> </td>
-                <td width="300px"><p>วันที่จัดส่ง</p><input type="text" name="DateSend" placeholder="Date"> </td>
+                <td width="300px"><p>รหัสลูกค้า</p><input type="text" id="myText" name="IdCustomer" placeholder="Customer ID" readonly> </td>
+                <td width="300px"><p>วันที่จัดส่ง</p>
+                    <select name="Day">
+                        <option selected disabled value="">- Day -</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select><select name="Month">
+                        <option selected disabled value="">- Month -</option>
+                        <option value="01">January</option>
+                        <option value="02">Febuary</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select><select name="Year">
+                        <option selected disabled value="">- Year -</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                        <option value="2035">2035</option>
+                        <option value="2036">2036</option>
+                        <option value="2037">2038</option>
+                        <option value="2038">2038</option>
+                        <option value="2039">2039</option>
+                        <option value="2040">2040</option>
+                        <option value="2041">2041</option>
+                        <option value="2042">2042</option>
+                        <option value="2043">2043</option>
+                        <option value="2044">2044</option>
+                        <option value="2045">2045</option>
+                        <option value="2046">2046</option>
+                        <option value="2047">2047</option>
+                        <option value="2048">2048</option>
+                        <option value="2049">2049</option>
+                        <option value="2050">2050</option>
+                        <option value="2051">2051</option>
+                        <option value="2052">2052</option>
+                        <option value="2053">2053</option>
+                        <option value="2054">2054</option>
+                        <option value="2055">2055</option>
+                        <option value="2056">2056</option>
+                        <option value="2057">2058</option>
+                        <option value="2058">2058</option>
+                        <option value="2059">2059</option>
+                        <option value="2060">2060</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td> <p>ชื่อลูกค้า</p>
-                    <SELECT name="nameCustomer" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Name</OPTION>
-                    <OPTION VALUE=1>ไกรวิทย์</OPTION>
-                    <OPTION VALUE=2>บุษกร</OPTION>
-                    <OPTION VALUE=3>กิ่งพัชฌา</OPTION>
-                    <OPTION VALUE=1>สมพงษ์</OPTION>
-                    <OPTION VALUE=2>กฤเพชร</OPTION>
-                    <OPTION VALUE=3>กฤษณา</OPTION>
-                </SELECT>
-                </td>
-            </tr>
-            <tr>
-                <td> <p>เพศ</p><SELECT name="sex1" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Gender</OPTION>
-                    <OPTION VALUE=Male>male</OPTION>
-                    <OPTION VALUE=Female>female</OPTION>
-                    <OPTION VALUE=Other>other</OPTION>
-                </SELECT>
-                </td>
-                <td> <p>สัญชาติ</p><SELECT name="nationality" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Nationality</OPTION>
-                    <OPTION VALUE=Thai>Thai</OPTION>
-                    <OPTION VALUE=American>American</OPTION>
-                    <OPTION VALUE=England>England</OPTION>
-                </SELECT>
-                </td>
-            </tr>
-            <tr>
-                <td> <p>ที่อยู่</p><SELECT name="address" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Address</OPTION>
-                    <OPTION VALUE=Pranburi>Pranburi</OPTION>
-                    <OPTION VALUE=Huahin>Huahin</OPTION>
-                    <OPTION VALUE=Bangkok>Bangkok</OPTION>
-                </SELECT>
-                </td>
-                <td> <p>รหัสไปรษณีย์</p><SELECT name="postcode" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">postcode</OPTION>
-                    <OPTION VALUE=77120>77120</OPTION>
-                    <OPTION VALUE=55201>55201</OPTION>
-                    <OPTION VALUE=99541>99541</OPTION>
-                </SELECT>
-                </td>
-            </tr>
-            <tr>
-                <td> <p>เบอร์โทรศัพท์</p><SELECT name="TelMe" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Tel</OPTION>
-                    <OPTION VALUE=0971326965>0971326965</OPTION>
-                    <OPTION VALUE=0956052119>0956052119</OPTION>
-                    <OPTION VALUE=0853706885>0853706885</OPTION>
-                </SELECT>
-                </td>
-                <td> <p>Email</p><SELECT name="Email" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Email</OPTION>
-                    <OPTION VALUE=kraiwit>Kraiwitroopchom@gmail.com</OPTION>
-                    <OPTION VALUE=bussakon>Busakonsupakitaumnouy@gmail.com</OPTION>
-                    <OPTION VALUE=kingpatcha>Kingpatcha@gmail.com</OPTION>
+                    <SELECT name="nameCustomer" required onchange="myFunction(event)"><p><font size="3" color="red">${errorInSex}</font></p>
+                    <OPTION SELECTED disabled ="">Name</OPTION>
+                        <%
+                            for(int i=0 ; i<name.length ; i++){
+                                response.setContentType("text/html");
+                                out.print("<OPTION VALUE="+customerid[i]+">"+name[i]+"</OPTION>");
+                            }
+                        %>
                 </SELECT>
                 </td>
             </tr>
         </table>
-        <br>
-        <br>
-
         <table>
             <tr>
-                <td width="300px"><p>รหัสสินค้า</p><input type="text" name="IdTire" placeholder="Tire ID"> </td>
+                <td width="300px"><p>รหัสสินค้า</p>
+                    <SELECT name="nameCustomer" required ><p><font size="3" color="red">${errorInSex}</font></p>
+                        <OPTION SELECTED disabled ="">Product ID</OPTION>
+                        <%
+                            for(int i=0 ; i<productid.length ; i++){
+                                response.setContentType("text/html");
+                                out.print("<OPTION VALUE="+productid[i]+">"+productid[i]+"</OPTION>");
+                            }
+                        %>
+                    </SELECT>
+                </td>
                 <td width="300px"><p>จำนวน (เส้น)</p><input type="text" name="NumTire" placeholder="Trie Number"> </td>
             </tr>
             <tr>
-                <td> <p>จำนวนราคา(ต่อเส้น)</p><SELECT name="price2" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">price</OPTION>
-                    <OPTION VALUE=3000>3000</OPTION>
-                    <OPTION VALUE=3500>3500</OPTION>
-                    <OPTION VALUE=3600>3600</OPTION>
-                </SELECT>
+                <td> <p>ราคา(ต่อเส้น)</p><input type="text" id="myText" name="IdCustomer" placeholder="Customer ID" readonly>
                 </td>
             </tr>
             <tr>
                 <td> <p>ยี่ห้อ</p><SELECT name="brand2" required><p><font size="3" color="red">${errorInSex}</font></p>
-                    <OPTION SELECTED value="">Brand</OPTION>
+                    <OPTION SELECTED disabled ="">Brand</OPTION>
                     <OPTION VALUE=misi>misi</OPTION>
                     <OPTION VALUE=koji>koji</OPTION>
                     <OPTION VALUE=adidas>adidas</OPTION>

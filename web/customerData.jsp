@@ -81,7 +81,6 @@
                 <th width="100px"  >รหัสลูกค้า</th> <th width="100px">ชื่อ</th> <th width="100px">นามสกุล</th> <th width="50px">เพศ</th> <th width="50px">สัญชาติ</th> <th width="200px">ที่อยู่</th> <th width="50px">รหัสไปรษณีย์</th><th width="100px">เบอร์โทรศัพท์</th> <th width="150px">Email</th> <th>แก้ไข</th>
             </tr>
             <%
-                int length = id.length;
                 for(int i=0 ; i<id.length ; i++){
                     response.setContentType("text/html");
                     out.print("<tr>");

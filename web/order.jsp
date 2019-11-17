@@ -64,12 +64,10 @@
                 <th width="200px">รหัสใบสั่งสินค้า</th><th width="150px">ชื่อ</th><th width="150px">นามสกุล</th><th width="150px">วันที่สั่ง</th> <th width="150px" align="center">รายละเอียด</th>
             </tr>
             <%
-                int length = orderid .length;
-                for(int i=0 ; i<orderid .length ; i++){
+                for(int i=0 ; i<orderid.length ; i++){
                     response.setContentType("text/html");
                     out.print("<tr>");
-                    out.print(" <td>"+orderid [i]+"</td> <td>"+firstname[i]+"</td> <td>"+lastname[i]+"</td> <td>"+date[i]+"</td>  <td align=\"center\">" +
-                            "<form action=\"getcustomerData\" method=\"get\"><input type=\"hidden\" name=\"id\" value=\""+orderid[i]+"\"><button class=\"fa fa-pencil-square-o\" aria-hidden=\"true\" style=\"background-color:#f5f5dc;border-width:0px;\" type=\"submit\"> </button> </td></form>");
+                    out.print(" <td> "+orderid[i]+" </td> <td> "+firstname[i]+"</td> <td> "+lastname[i]+"</td> <td> "+date[i]+ "</td> <td align=\"center\"><a href=\"order_attribute.jsp\"><i class=\"fa fa-book\" aria-hidden=\"true\"></i></a> </td>");
                     out.print("</tr>");
                 }
             %>
