@@ -238,20 +238,20 @@
         <table>
             <tr>
                 <td width="300px"><p>รหัสสินค้า</p>
-                    <input type="text" id="myText" name="ProductID" placeholder="ProductID" readonly>
+                    <input type="text" id="myText" name="ProductID" value="<%=ides%>" placeholder="ProductID" readonly>
                 </td>
                 <td width="300px"><p>จำนวน (เส้น)</p><input type="text" name="NumTire" placeholder="Trie Number"> </td>
             </tr>
             <tr>
-                <td> <p>ราคา(ต่อเส้น)</p><input type="text" id="myText" name="Price" placeholder="Price" readonly>
+                <td> <p>ราคา(ต่อเส้น)</p><input type="text" id="myText" name="Price" value="<%=prices%>" placeholder="Price" readonly>
                 </td>
             </tr>
             <tr>
                 <td> <p>ยี่ห้อ</p>
-                    <input type="text" id="myText" name="Brand" placeholder="Brand" readonly>
+                    <input type="text" id="myText" name="Brand" value="<%=brands%>"placeholder="Brand" readonly>
                 </td>
                 <td> <p>รุ่น</p>
-                    <input type="text" id="myText" name="Generation" placeholder="Generation" readonly>
+                    <input type="text" id="myText" name="Generation" value="<%=generations%>"placeholder="Generation" readonly>
                 </td>
             </tr>
         </table>
