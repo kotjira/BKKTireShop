@@ -25,8 +25,14 @@
 
 %>
 <%
+    String err = "";
+    if(session.getAttribute("err") != null){
+        err = session.getAttribute("err").toString();
+    }
     try
     {
+
+
         Class.forName("com.mysql.jdbc.Driver"); //load driver
 
         Connection con= DriverManager.getConnection("jdbc:mysql://167.99.76.137:3306/BKK GROUP","bkkgroup","212224236248"); //create connection
@@ -43,16 +49,30 @@
                 String dbURL = "jdbc:mysql://167.99.76.137:3306/BKK GROUP";
                 String dbUser = "bkkgroup";
                 String dbPass = "212224236248";
-                Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
-                String INSERT_USERS_SQL = ("UPDATE orders SET Product_ID = ?, Order_brand = ?, Quantity = ? WHERE Order_ID = ?");
-                PreparedStatement ps = conn.prepareStatement(INSERT_USERS_SQL);
-                ps.setString(1,IdTire);
-                ps.setString(2,brand1);
-                ps.setString(3,NumTire);
-                ps.setString(4,idorder);
-                int status = ps.executeUpdate();
-                con.close();
-                response.sendRedirect("order.jsp");
+                Connection connn = DriverManager.getConnection(dbURL, dbUser, dbPass);
+                String INSERT_USERS_SQL2 = ("SELECT * FROM tire where Product_ID = ? and Brand = ? and Generation = ?");
+                PreparedStatement pss = connn.prepareStatement(INSERT_USERS_SQL2);
+                pss.setString(1,IdTire);
+                pss.setString(2,brand1);
+                pss.setString(3,generation);
+                ResultSet rsss = pss.executeQuery();
+                if (rsss.next()){
+                    Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPass);
+                    String INSERT_USERS_SQL = ("UPDATE orders SET Product_ID = ?, Order_brand = ?, Quantity = ? WHERE Order_ID = ?");
+                    PreparedStatement ps = conn.prepareStatement(INSERT_USERS_SQL);
+                    ps.setString(1,IdTire);
+                    ps.setString(2,brand1);
+                    ps.setString(3,NumTire);
+                    ps.setString(4,idorder);
+                    int status = ps.executeUpdate();
+                    con.close();
+                    response.sendRedirect("order.jsp");
+                }
+                else{
+                    session.setAttribute("err","The data does not match in database !");
+                    response.sendRedirect("order_edit.jsp");
+                }
+
             }
             catch(Exception e)
             {
@@ -104,6 +124,7 @@ System.out.println(e);
 </head>
 <body>
 <div class="pageBox">
+   <span class="closebtn"><%=err%></span>
     <div class="pageH1"><left><h1>แก้ไขใบสั่งสินค้า</h1></left></div>
 
     <div class="pageOrderEdit" style="overflow-y:scroll;height:420px">

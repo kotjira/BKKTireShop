@@ -44,7 +44,7 @@
         if(email.equals(dbemail) && password.equals(dbpassword))
         {
           session.setAttribute("login",dbemail); //session name is login and store fetchable database email address
-          response.sendRedirect("date.jsp"); //after login success redirect to date.jsp page
+          response.sendRedirect("home.jsp"); //after login success redirect to date.jsp page
         }
       }
       else

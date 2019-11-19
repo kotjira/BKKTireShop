@@ -10,6 +10,28 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
+    String sqltext = "";
+
+    String btnday = "";
+    String btnmonth = "";
+    String btnyear = "";
+
+    try {
+         btnday = session.getAttribute("btnday").toString();
+
+         btnmonth = session.getAttribute("btnmonth").toString();
+         btnyear = session.getAttribute("btnyear").toString();
+        String sql = btnyear+"-"+btnmonth+"-"+btnday;
+        sqltext = "select * from orders where Order_date = '"+sql+"'";
+
+    }catch (Exception e){
+        e.printStackTrace();
+        sqltext = "select * from orders";
+    }
+
+
+    System.out.println(btnday+btnmonth+btnyear);
+
     ArrayList<String> OrderID = new ArrayList<String>();
     ArrayList<String> Firstname = new ArrayList<String>();
     ArrayList<String> Lastname = new ArrayList<String>();
@@ -23,7 +45,8 @@
         String dbPass = "212224236248";
         Connection con = DriverManager.getConnection(dbURL, dbUser, dbPass);
 
-        PreparedStatement ps = con.prepareStatement("select * from orders");
+
+        PreparedStatement ps = con.prepareStatement(sqltext);
 
         resultSet = ps.executeQuery();
 
@@ -57,7 +80,7 @@
 <body>
 <div class="pageBox">
     <div class="pageH1"><left><h1>ใบสั่งสินค้า</h1></left></div>
-    <div class="pageH" align="right"> <a href="home.jsp"><button class="buttonBack" style="vertical-align:middle"><span>BACK </span> </button></a>
+    <div class="pageH" align="right"> <a href="date.jsp"><button class="buttonBack" style="vertical-align:middle"><span>BACK </span> </button></a>
     </div>
 
     <div class="pageOrder" style="overflow-y:scroll;height:420px">

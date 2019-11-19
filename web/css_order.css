@@ -476,3 +476,15 @@ body
     opacity: 1;
     right: 0;
 }
+span.closebtn {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    color: #cf120f;
+    cursor: pointer;
+    transition: 0.3s;
+}
+span.closebtn:hover {
+    color: black;
+
+}

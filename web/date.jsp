@@ -10,8 +10,19 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%
+    if(request.getParameter("btn_date")!=null) {
+        String btnday = request.getParameter("Day"), btnmonth = request.getParameter("Month"), btnyear = request.getParameter("Year");
+        session.setAttribute("btnday",btnday);
+        session.setAttribute("btnmonth",btnmonth);
+        session.setAttribute("btnyear",btnyear);
+        RequestDispatcher dispatch = null ;
+        ServletContext context = request.getServletContext();
+        dispatch = context.getRequestDispatcher("/order.jsp");
+        dispatch.forward(request, response);
+
+    }
+
     Set<String> Day = new HashSet<String>();
     Set<String> Month = new HashSet<String>();
     Set<String> Year = new HashSet<String>();
@@ -68,12 +79,17 @@
     {
         System.out.println(e);
     }
+
         String[] day = new String[Day.size()];
         String[] month = new String[Month.size()];
         String[] year = new String[Year.size()];
+
         day = Day.toArray(day);
+        Arrays.sort(day);
         month = Month.toArray(month);
         year = Year.toArray(year);
+    Arrays.sort(month);
+    Arrays.sort(year);
 
         /* Printing result */
        %>
@@ -94,6 +110,7 @@
                 <h1>Date | วัน เวลา </h1>
                 <div class="pageDate" align="center">
                     <h3>วันเเดือนปีที่ทำการแก้ไข บันทึก ข้อมูล</h3>
+                    <form action ="date.jsp" name = "date" method="post">
                     <select name="Day">
                         <option selected disabled value="">- Day -</option>
                     <%
@@ -157,16 +174,12 @@
                                 out.print("<option value=\""+year[p]+"\">"+year[p]+"</option>");
                             }
 
-
-
-
-
                         %>
                 </select>
                     <br>
                     <br>
-                    <a href="home.jsp"><button class="buttonConfirm"  style="vertical-align:middle"><span>OK</span> </button></a>
-                </div >
+                    <button class="buttonConfirm"  style="vertical-align:middle" type="submit" value="submit" name="btn_date"><span>OK</span> </button>
+                    </form></div >
             </td>
         </tr>
     </table>

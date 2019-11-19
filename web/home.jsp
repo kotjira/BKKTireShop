@@ -25,7 +25,7 @@
                 <div class="pageHome" align="center">
                     <a href="tire.jsp"><button class="buttonTire"  style="vertical-align:middle"><span>ยางรถยนต์ </span> </button></a>
                     <a href="customerData.jsp"><button class="buttonDataCustomer"  style="vertical-align:middle"><span>ข้อมูลลูกค้า </span> </button></a>
-                    <a href="order.jsp"><button class="buttonOrder"  style="vertical-align:middle"><span>ใบสั่งสินค้า </span> </button></a>
+                    <a href="date.jsp"><button class="buttonOrder"  style="vertical-align:middle"><span>ใบสั่งสินค้า </span> </button></a>
                 </div>
                 <br>
                 <center><a href="logout.jsp"><button class="buttonLogout"  style="vertical-align:middle"><span>ออกจากระบบ</span> </button></a> </center>

@@ -45,7 +45,7 @@ public class LoginServlet extends HttpServlet {
                 dispatch = context.getRequestDispatcher("/index.jsp");
                 dispatch.forward(request, response);
             }else {
-                dispatch = context.getRequestDispatcher("/date.jsp");
+                dispatch = context.getRequestDispatcher("/home.jsp");
                 System.out.println("result yes");
                 dispatch.forward(request, response);
             }
